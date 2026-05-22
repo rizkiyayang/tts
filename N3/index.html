@@ -2668,6 +2668,27 @@
 
       async function initializeTtsAccess() {
         const params = new URLSearchParams(location.search);
+        const attemptId = params.get("attempt");
+        if (attemptId) {
+          setStatus("Mengecek pembayaran " + TTS_LEVEL + "...");
+          try {
+            const response = await fetch(TTS_API_BASE + "/verify-payment", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ attemptId }),
+            });
+            const payment = await response.json().catch(() => ({}));
+            if (!response.ok || !payment.ok) {
+              throw new Error(payment.error || "Status pembayaran belum terbaca.");
+            }
+            if (payment.paid && payment.accessUrl) {
+              location.replace(payment.accessUrl);
+              return;
+            }
+          } catch (error) {
+            setStatus(error.message || "Status pembayaran belum bisa dicek.");
+          }
+        }
         const accessToken = params.get("access");
         if (accessToken && (await verifyTtsAccess({ accessToken }))) {
           history.replaceState(null, "", location.pathname);
