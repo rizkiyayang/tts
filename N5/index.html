@@ -2708,6 +2708,27 @@
 
       async function initializeTtsAccess() {
         const params = new URLSearchParams(location.search);
+        const attemptId = params.get("attempt");
+        if (attemptId) {
+          setStatus("Mengecek pembayaran " + TTS_LEVEL + "...");
+          try {
+            const response = await fetch(TTS_API_BASE + "/verify-payment", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ attemptId }),
+            });
+            const payment = await response.json().catch(() => ({}));
+            if (!response.ok || !payment.ok) {
+              throw new Error(payment.error || "Status pembayaran belum terbaca.");
+            }
+            if (payment.paid && payment.accessUrl) {
+              location.replace(payment.accessUrl);
+              return;
+            }
+          } catch (error) {
+            setStatus(error.message || "Status pembayaran belum bisa dicek.");
+          }
+        }
         const accessToken = params.get("access");
         if (accessToken && (await verifyTtsAccess({ accessToken }))) {
           history.replaceState(null, "", location.pathname);
@@ -2988,40 +3009,52 @@
             submitButton.textContent = "Memproses...";
           }
 
-          const response = await fetch(TTS_API_BASE + "/checkout", {
+          const response = await fetch(TTS_API_BASE + "/create-payment", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
+              source: activeCheckoutProductKey,
               productKey: activeCheckoutProductKey,
+              planKey: activeCheckoutProductKey,
+              productName: product.title,
+              itemName: product.title,
+              productCategory: "tts",
+              amount: product.price,
+              minimumAmount: product.price,
+              defaultPrice: product.price,
+              accessUrl,
+              resumeUrl: accessUrl,
+              finishUrl: accessUrl,
+              maxAttempts: -1,
               name,
-              email,
               whatsapp,
+              email,
+              couponCode,
             }),
           });
-          const data = await response.json().catch(() => null);
+          const data = await response.json().catch(() => ({}));
 
-          if (!response.ok || !data) {
-            throw new Error("Checkout gagal diproses.");
+          if (!response.ok || !data.ok) {
+            throw new Error(data.error || "Gagal membuat pembayaran.");
           }
 
-          const paymentUrl = data.paymentUrl || data.redirect_url || data.url;
+          const paymentUrl =
+            data.redirectUrl ||
+            data.paymentUrl ||
+            data.redirect_url ||
+            data.url;
           if (paymentUrl) {
             window.location.href = paymentUrl;
             return;
           }
 
-          throw new Error(
-            data.message || "Link pembayaran belum tersedia dari server.",
-          );
+          throw new Error("Link pembayaran belum tersedia dari server.");
         } catch (error) {
-          showTtsCheckoutError(
-            error.message ||
-              "Terjadi kendala saat membuat pembayaran. Coba lagi sebentar lagi.",
-          );
+          showTtsCheckoutError(error.message || "Gagal membuat pembayaran.");
         } finally {
           if (submitButton) {
             submitButton.disabled = false;
-            submitButton.textContent = "Buka Akses Sekarang";
+            submitButton.textContent = "Lanjut Bayar";
           }
         }
       }
