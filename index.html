@@ -283,5 +283,86 @@
       </div>
       <footer class="footer">© 2026 · Belajar Wibu</footer>
     </div>
-  </body>
+  
+
+<script>
+(function(){
+  if (window.__BWTX_TRACKER_READY__) return;
+  window.__BWTX_TRACKER_READY__ = true;
+  var ENDPOINT = "https://admin.belajarwibu.com/wp-json/bwtx/v1/track";
+  var sessionKey = "bwtx_tracker_session";
+  var sessionId = "";
+  try {
+    sessionId = localStorage.getItem(sessionKey) || "";
+    if (!sessionId) {
+      sessionId = "s_" + Date.now().toString(36) + "_" + Math.random().toString(36).slice(2, 10);
+      localStorage.setItem(sessionKey, sessionId);
+    }
+  } catch (error) {
+    sessionId = "s_" + Date.now().toString(36) + "_" + Math.random().toString(36).slice(2, 10);
+  }
+  function params(){ return new URLSearchParams(window.location.search || ""); }
+  function clean(value){ return String(value || "").replace(/\s+/g, " ").trim().slice(0, 180); }
+  function pageKey(){
+    var key = (document.body && (document.body.dataset.bwtxPage || document.body.dataset.productKey)) || window.BWTX_PAGE_KEY || window.BWTX_PRODUCT_KEY || "";
+    if (key) return clean(key).toLowerCase().replace(/[^a-z0-9_\-]+/g, "_");
+    var path = window.location.pathname.replace(/^\/+|\/+$/g, "");
+    return path ? path.replace(/\//g, "_").toLowerCase() : "home";
+  }
+  function productKey(){
+    var key = (document.body && document.body.dataset.productKey) || window.BWTX_PRODUCT_KEY || window.PRODUCT_KEY || "";
+    return clean(key).toLowerCase().replace(/[^a-z0-9_\-]+/g, "_");
+  }
+  function attemptId(){
+    var q = params();
+    return clean(q.get("attempt") || q.get("attemptId") || q.get("order_id") || "");
+  }
+  function basePayload(extra){
+    var q = params();
+    return Object.assign({
+      pageKey: pageKey(),
+      pageUrl: window.location.href,
+      path: window.location.pathname,
+      productKey: productKey(),
+      attemptId: attemptId(),
+      sessionId: sessionId,
+      referrer: document.referrer || "",
+      userAgent: navigator.userAgent || "",
+      utmSource: q.get("utm_source") || "",
+      utmMedium: q.get("utm_medium") || "",
+      utmCampaign: q.get("utm_campaign") || ""
+    }, extra || {});
+  }
+  function track(eventType, extra){
+    var payload = basePayload(Object.assign({ eventType: eventType }, extra || {}));
+    try {
+      var body = JSON.stringify(payload);
+      if (navigator.sendBeacon) {
+        var blob = new Blob([body], { type: "application/json" });
+        if (navigator.sendBeacon(ENDPOINT, blob)) return;
+      }
+      fetch(ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json" }, body: body, keepalive: true }).catch(function(){});
+    } catch (error) {}
+  }
+  window.BWTXTrack = track;
+  track("page_view");
+  var startedForms = new WeakSet();
+  document.addEventListener("input", function(event){
+    var form = event.target && event.target.closest && event.target.closest("form");
+    if (!form || startedForms.has(form)) return;
+    startedForms.add(form);
+    track("form_start", { label: clean(form.getAttribute("aria-label") || form.id || form.className || "form") });
+  }, true);
+  document.addEventListener("click", function(event){
+    var el = event.target && event.target.closest && event.target.closest("[data-track], a, button, input[type='submit']");
+    if (!el) return;
+    var label = clean(el.getAttribute("data-track") || el.getAttribute("aria-label") || el.value || el.innerText || el.textContent || el.href || "click");
+    var target = el.href || el.getAttribute("data-href") || el.getAttribute("formaction") || "";
+    var lower = label.toLowerCase();
+    var type = /rekomendasi|recommendation/.test(lower) ? "recommendation_click" : (/bayar|beli|checkout|lanjut bayar|daftar|akses premium/.test(lower) ? "checkout_click" : "cta_click");
+    track(type, { label: label, targetUrl: target });
+  }, true);
+})();
+</script>
+</body>
 </html>
