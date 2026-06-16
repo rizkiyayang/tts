@@ -1,5 +1,5 @@
-// === VOCABS N3 ===
-// Sumber utama: daftar JLPT N3 terstruktur, diselaraskan sebisanya dengan foto referensi pengguna.
+// Kosakata N3 — dikurasi untuk TTS Belajar Wibu v0.6.0
+// Petunjuk kana disembunyikan sebelum benar; jawaban mengikuti hiragana/katakana standar.
 window.VOCABS = [
   {
     "question": "あちこち",
@@ -8,7 +8,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "アドバイス",
@@ -17,7 +18,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata serapan"
   },
   {
     "question": "揚げる",
@@ -27,21 +29,7 @@ window.VOCABS = [
       "N3",
       "Kata kerja"
     ],
-    "synonyms_id": [
-      "menggoreng"
-    ]
-  },
-  {
-    "question": "揚げる",
-    "reading": "あげる",
-    "meaning": "menggoreng",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ],
-    "synonyms_id": [
-      "menggoreng"
-    ]
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "顎",
@@ -51,10 +39,7 @@ window.VOCABS = [
       "N3",
       "Kata benda"
     ],
-    "synonyms_id": [
-      "dagu",
-      "rahang"
-    ]
+    "clueLabel": "Kata benda"
   },
   {
     "question": "愛情",
@@ -64,10 +49,7 @@ window.VOCABS = [
       "N3",
       "Kata benda"
     ],
-    "synonyms_id": [
-      "cinta",
-      "kasih sayang"
-    ]
+    "clueLabel": "Kata benda"
   },
   {
     "question": "相変わらず",
@@ -76,7 +58,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "曖昧",
@@ -85,7 +68,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "あいにく",
@@ -94,25 +78,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
-  },
-  {
-    "question": "挨拶",
-    "reading": "あいさつ",
-    "meaning": "salam, sapaan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "赤字",
     "reading": "あかじ",
-    "meaning": "defisit, di warna merah",
+    "meaning": "defisit, tulisan merah",
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "アカウント",
@@ -121,7 +98,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "飽きっぽい",
@@ -130,7 +108,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "明らか",
@@ -139,7 +118,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "憧れる",
@@ -148,7 +128,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "欠伸",
@@ -158,9 +139,7 @@ window.VOCABS = [
       "N3",
       "Kata benda"
     ],
-    "synonyms_id": [
-      "kuap"
-    ]
+    "clueLabel": "Kata benda"
   },
   {
     "question": "あくまで",
@@ -169,7 +148,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "握手",
@@ -179,9 +159,7 @@ window.VOCABS = [
       "N3",
       "Kata benda"
     ],
-    "synonyms_id": [
-      "jabat tangan"
-    ]
+    "clueLabel": "Kata benda"
   },
   {
     "question": "編む",
@@ -190,7 +168,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "穴",
@@ -199,7 +178,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "アナログ",
@@ -208,61 +188,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
-  },
-  {
-    "question": "アンケート",
-    "reading": "あんけーと",
-    "meaning": "angket, survei, kuesioner",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
-  },
-  {
-    "question": "安心",
-    "reading": "あんしん",
-    "meaning": "lega, tenang, merasa aman",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
-  },
-  {
-    "question": "アップデート",
-    "reading": "あっぷでーと",
-    "meaning": "memperbarui",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
-  },
-  {
-    "question": "アップロード",
-    "reading": "あっぷろーど",
-    "meaning": "mengunggah",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "アプリ",
     "reading": "あぷり",
-    "meaning": "aplikasi, aplikasi",
+    "meaning": "aplikasi",
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "アプローチ",
-    "reading": "あぷろーち",
-    "meaning": "mendekati",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "あらかじめ",
@@ -271,16 +208,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
-  },
-  {
-    "question": "アレルギー",
-    "reading": "あれるぎー",
-    "meaning": "alergi",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "ありふれた",
@@ -289,16 +218,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
-  },
-  {
-    "question": "浅い",
-    "reading": "あさい",
-    "meaning": "dangkal",
-    "chapter": [
-      "N3",
-      "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "焦る",
@@ -307,7 +228,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "あっさり",
@@ -316,7 +238,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "与える",
@@ -325,7 +248,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "当たる",
@@ -334,7 +258,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "厚かましい",
@@ -343,7 +268,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "圧倒的",
@@ -352,7 +278,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "慌ただしい",
@@ -361,16 +288,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
-  },
-  {
-    "question": "謝る",
-    "reading": "あやまる",
-    "meaning": "meminta maaf",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "怪しい",
@@ -379,7 +298,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "鮮やか",
@@ -388,16 +308,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
-  },
-  {
-    "question": "場合",
-    "reading": "ばあい",
-    "meaning": "kasus, situasi",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "馬鹿らしい",
@@ -406,7 +318,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "罰金",
@@ -415,7 +328,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "バックアップ",
@@ -424,7 +338,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "莫大",
@@ -433,7 +348,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "場面",
@@ -442,7 +358,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "番組",
@@ -451,7 +368,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "ばらばら",
@@ -460,7 +378,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "バランス",
@@ -469,16 +388,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "ベンチャー",
-    "reading": "べんちゃー",
-    "meaning": "usaha",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "弁護士",
@@ -487,7 +398,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "ベスト",
@@ -496,7 +408,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "べとべと",
@@ -505,7 +418,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "微妙",
@@ -514,7 +428,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "ビタミン",
@@ -523,7 +438,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "ぼんやり",
@@ -532,7 +448,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "ボランティア",
@@ -541,7 +458,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "ぼろぼろ",
@@ -550,7 +468,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "募集",
@@ -559,7 +478,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "膨大",
@@ -568,7 +488,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "貿易",
@@ -577,16 +498,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "部分",
     "reading": "ぶぶん",
-    "meaning": "bagian, bagian",
+    "meaning": "bagian",
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "不器用",
@@ -595,7 +518,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "物価",
@@ -604,16 +528,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "物価",
-    "reading": "ぶっか",
-    "meaning": "harga, biaya hidup",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "部門",
@@ -622,7 +538,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "文化",
@@ -631,7 +548,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "文明",
@@ -640,7 +558,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "分離",
@@ -649,7 +568,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "分類する",
@@ -658,16 +578,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "分類する",
-    "reading": "ぶんるいする",
-    "meaning": "mengklasifikasikan",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "分析",
@@ -676,7 +588,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "分析する",
@@ -685,7 +598,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "分野",
@@ -694,7 +608,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "ぶらぶら",
@@ -703,7 +618,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "ブランド",
@@ -712,16 +628,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "ブレインストーミング",
-    "reading": "ぶれいんすとーみんぐ",
-    "meaning": "bertukar pikiran",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "ぶつぶつ",
@@ -730,16 +638,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
-  },
-  {
-    "question": "ブーム",
-    "reading": "ぶーむ",
-    "meaning": "ledakan, kecenderungan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "平等",
@@ -748,16 +648,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "チャンス",
     "reading": "ちゃんす",
-    "meaning": "peluang, peluang",
+    "meaning": "peluang",
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "ちゃんと",
@@ -766,7 +668,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "地方",
@@ -775,16 +678,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "地域",
-    "reading": "ちいき",
-    "meaning": "daerah, wilayah",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "縮める",
@@ -793,7 +688,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "縮む",
@@ -802,16 +698,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "遅刻",
     "reading": "ちこく",
-    "meaning": "keterlambatan, keterlambatan",
+    "meaning": "keterlambatan",
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "散らかる",
@@ -820,7 +718,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "散らかす",
@@ -829,7 +728,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "散る",
@@ -838,16 +738,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "散る",
-    "reading": "ちる",
-    "meaning": "menyebar, jatuh",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "治療",
@@ -856,7 +748,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "知識",
@@ -865,7 +758,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "貯金箱",
@@ -874,7 +768,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "直感",
@@ -883,7 +778,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "直後",
@@ -892,7 +788,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "直接",
@@ -901,7 +798,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "直前",
@@ -910,16 +808,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "頂上",
     "reading": "ちょうじょう",
-    "meaning": "puncak, puncak",
+    "meaning": "puncak",
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "兆候",
@@ -928,7 +828,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "調査",
@@ -937,7 +838,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "調査する",
@@ -946,7 +848,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "挑戦する",
@@ -955,7 +858,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "中学校",
@@ -964,7 +868,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "注目する",
@@ -973,16 +878,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "注目する",
-    "reading": "ちゅうもくする",
-    "meaning": "diperhatikan",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "注射",
@@ -991,7 +888,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "中心",
@@ -1000,7 +898,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "抽象的",
@@ -1009,25 +908,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
-  },
-  {
-    "question": "台",
-    "reading": "だい",
-    "meaning": "berdiri, counter untuk mesin",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
-  },
-  {
-    "question": "ダイバーシティ",
-    "reading": "だいばーしてぃ",
-    "meaning": "keberagaman",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "大学院",
@@ -1036,7 +918,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "大体",
@@ -1045,16 +928,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "大胆",
     "reading": "だいたん",
-    "meaning": "berani, berani",
+    "meaning": "berani",
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "妥協する",
@@ -1063,7 +948,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "段階",
@@ -1072,16 +958,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "ダウンロード",
-    "reading": "だうんろーど",
-    "meaning": "unduh",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "デッドライン",
@@ -1090,16 +968,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "データ",
-    "reading": "でーた",
-    "meaning": "data",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "デジタル",
@@ -1108,7 +978,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "デメリット",
@@ -1117,7 +988,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "伝統",
@@ -1126,16 +998,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "デリケート",
-    "reading": "でりけーと",
-    "meaning": "halus",
-    "chapter": [
-      "N3",
-      "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "どきどき",
@@ -1144,7 +1008,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "独立",
@@ -1153,7 +1018,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "独創的",
@@ -1162,7 +1028,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "泥",
@@ -1171,7 +1038,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "努力",
@@ -1180,7 +1048,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "同情",
@@ -1189,7 +1058,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "同情する",
@@ -1198,7 +1068,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "導入",
@@ -1207,7 +1078,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "道徳",
@@ -1216,7 +1088,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "どうやら",
@@ -1225,7 +1098,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "描く",
@@ -1234,7 +1108,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "永遠",
@@ -1243,7 +1118,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "影響",
@@ -1252,7 +1128,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "影響する",
@@ -1261,7 +1138,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "栄養",
@@ -1270,7 +1148,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "栄養素",
@@ -1279,7 +1158,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "エコ",
@@ -1288,16 +1168,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "エネルギー",
-    "reading": "えねるぎー",
-    "meaning": "energi",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "演説",
@@ -1306,7 +1178,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "得る",
@@ -1315,7 +1188,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "ファン",
@@ -1324,25 +1198,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "フィードバック",
-    "reading": "ふぃーどばっく",
-    "meaning": "masukan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
-  },
-  {
-    "question": "フォロー",
-    "reading": "ふぉろー",
-    "meaning": "menindaklanjuti, mendukung",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "不安",
@@ -1351,25 +1208,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "不安",
-    "reading": "ふあん",
-    "meaning": "kecemasan, kegelisahan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
-  },
-  {
-    "question": "増える",
-    "reading": "ふえる",
-    "meaning": "meningkat",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "復興",
@@ -1378,7 +1218,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "復旧",
@@ -1387,16 +1228,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "拭く",
     "reading": "ふく",
-    "meaning": "menghapus",
+    "meaning": "mengelap, menyeka",
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "含む",
@@ -1405,7 +1248,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "膨らむ",
@@ -1414,7 +1258,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "福祉",
@@ -1423,7 +1268,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "不況",
@@ -1432,7 +1278,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "普及",
@@ -1441,7 +1288,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "普及する",
@@ -1450,7 +1298,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "不満",
@@ -1459,7 +1308,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "踏切",
@@ -1468,7 +1318,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "雰囲気",
@@ -1477,7 +1328,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "フレキシブル",
@@ -1486,16 +1338,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
-  },
-  {
-    "question": "フリーランス",
-    "reading": "ふりーらんす",
-    "meaning": "bekerja lepas",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "振り返る",
@@ -1504,7 +1348,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "振込",
@@ -1513,7 +1358,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "振り向く",
@@ -1522,7 +1368,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "振る",
@@ -1531,16 +1378,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "振る",
-    "reading": "ふる",
-    "meaning": "mengguncang, melambai",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "震える",
@@ -1549,7 +1388,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "相応しい",
@@ -1558,7 +1398,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "ふと",
@@ -1567,16 +1408,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
-  },
-  {
-    "question": "太る",
-    "reading": "ふとる",
-    "meaning": "menambah berat badan",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "風景",
@@ -1585,7 +1418,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "ふわふわ",
@@ -1594,7 +1428,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "増やす",
@@ -1603,7 +1438,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "ガバナンス",
@@ -1612,7 +1448,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "がっちり",
@@ -1621,7 +1458,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "ガイドライン",
@@ -1630,7 +1468,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "概念",
@@ -1639,7 +1478,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "概略",
@@ -1648,7 +1488,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "概要",
@@ -1657,7 +1498,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "画家",
@@ -1666,7 +1508,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "崖",
@@ -1675,7 +1518,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "がっかり",
@@ -1684,7 +1528,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "学部",
@@ -1693,7 +1538,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "学者",
@@ -1702,7 +1548,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "我慢",
@@ -1711,7 +1558,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "我慢する",
@@ -1720,16 +1568,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "我慢する",
-    "reading": "がまんする",
-    "meaning": "bertahan, untuk bersabar",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "頑丈",
@@ -1738,7 +1578,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "合併",
@@ -1747,7 +1588,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "柄",
@@ -1756,7 +1598,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "側",
@@ -1765,7 +1608,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "原因",
@@ -1774,16 +1618,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "原因",
-    "reading": "げんいん",
-    "meaning": "menyebabkan, alasan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "現実",
@@ -1792,7 +1628,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "限界",
@@ -1801,7 +1638,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "原料",
@@ -1810,25 +1648,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "原料",
-    "reading": "げんりょう",
-    "meaning": "bahan mentah",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "現象",
     "reading": "げんしょう",
-    "meaning": "gejala",
+    "meaning": "fenomena",
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "減少する",
@@ -1837,7 +1668,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "原則",
@@ -1846,7 +1678,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "現在",
@@ -1855,7 +1688,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "技術",
@@ -1864,7 +1698,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "ぎこちない",
@@ -1873,7 +1708,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "義務",
@@ -1882,16 +1718,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "義務",
-    "reading": "ぎむ",
-    "meaning": "tugas, kewajiban",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "義理",
@@ -1900,7 +1728,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "ぎりぎり",
@@ -1909,7 +1738,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "議論",
@@ -1918,7 +1748,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "議論する",
@@ -1927,7 +1758,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "技師",
@@ -1936,7 +1768,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "ぎっしり",
@@ -1945,16 +1778,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "ごちゃごちゃ",
     "reading": "ごちゃごちゃ",
-    "meaning": "berantakan, berantakan",
+    "meaning": "berantakan",
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "誤解する",
@@ -1963,16 +1798,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "ごく",
     "reading": "ごく",
-    "meaning": "sangat, sangat",
+    "meaning": "sangat",
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "ごろごろ",
@@ -1981,7 +1818,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "合計",
@@ -1990,7 +1828,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "合理的",
@@ -1999,16 +1838,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
-  },
-  {
-    "question": "グローバル",
-    "reading": "ぐろーばる",
-    "meaning": "global",
-    "chapter": [
-      "N3",
-      "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "ぐるぐる",
@@ -2017,7 +1848,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "ぐっすり",
@@ -2026,7 +1858,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "具体的",
@@ -2035,16 +1868,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "偶然",
     "reading": "ぐうぜん",
-    "meaning": "kebetulan, kebetulan",
+    "meaning": "kebetulan",
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "行事",
@@ -2053,7 +1888,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "業績",
@@ -2062,25 +1898,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "業績",
-    "reading": "ぎょうせき",
-    "meaning": "hasil bisnis",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
-  },
-  {
-    "question": "ハード",
-    "reading": "はーど",
-    "meaning": "keras, keras",
-    "chapter": [
-      "N3",
-      "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "幅",
@@ -2089,7 +1908,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "発注する",
@@ -2098,16 +1918,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "派手",
     "reading": "はで",
-    "meaning": "menyolok, menyolok",
+    "meaning": "menyolok",
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "歯がゆい",
@@ -2116,7 +1938,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "激しい",
@@ -2125,7 +1948,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "背景",
@@ -2134,7 +1958,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "配慮",
@@ -2143,7 +1968,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "廃止",
@@ -2152,25 +1978,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "配達する",
     "reading": "はいたつする",
-    "meaning": "menyampaikan",
+    "meaning": "mengantar, mengirimkan",
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "配達する",
-    "reading": "はいたつする",
-    "meaning": "menyampaikan",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "配当",
@@ -2179,7 +1998,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "俳優",
@@ -2188,7 +2008,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "配属",
@@ -2197,7 +2018,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "はかどる",
@@ -2206,7 +2028,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "測る",
@@ -2215,7 +2038,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "吐き気",
@@ -2224,7 +2048,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "発見する",
@@ -2233,25 +2058,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "発見する",
-    "reading": "はっけんする",
-    "meaning": "menemukan",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
-  },
-  {
-    "question": "はっきり",
-    "reading": "はっきり",
-    "meaning": "jelas, dengan jelas",
-    "chapter": [
-      "N3",
-      "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "拍手",
@@ -2260,7 +2068,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "華やか",
@@ -2269,7 +2078,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "半分",
@@ -2278,16 +2088,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "判断",
     "reading": "はんだん",
-    "meaning": "keputusan, keputusan",
+    "meaning": "keputusan",
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "判断する",
@@ -2296,7 +2108,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "範囲",
@@ -2305,7 +2118,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "反面",
@@ -2314,7 +2128,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "反比例",
@@ -2323,7 +2138,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "反省",
@@ -2332,7 +2148,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "反省する",
@@ -2341,7 +2158,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "反対する",
@@ -2350,7 +2168,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "犯罪",
@@ -2359,7 +2178,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "端",
@@ -2368,7 +2188,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "柱",
@@ -2377,7 +2198,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "発生",
@@ -2386,7 +2208,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "発想",
@@ -2395,7 +2218,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "畑",
@@ -2404,7 +2228,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "果たして",
@@ -2413,7 +2238,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "果たす",
@@ -2422,7 +2248,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "発明する",
@@ -2431,34 +2258,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "発明する",
-    "reading": "はつめいする",
-    "meaning": "menciptakan",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "発展する",
     "reading": "はってんする",
-    "meaning": "mengembangkan, untuk tumbuh",
+    "meaning": "berkembang",
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "発展する",
-    "reading": "はってんする",
-    "meaning": "mengembangkan, untuk tumbuh",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "林",
@@ -2467,7 +2278,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "外れる",
@@ -2476,7 +2288,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "平均",
@@ -2485,7 +2298,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "平和",
@@ -2494,7 +2308,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "偏見",
@@ -2503,7 +2318,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "減らす",
@@ -2512,7 +2328,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "減る",
@@ -2521,16 +2338,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "響く",
     "reading": "ひびく",
-    "meaning": "bergema, bergema",
+    "meaning": "bergema",
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "皮膚",
@@ -2539,7 +2358,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "被害",
@@ -2548,7 +2368,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "被害者",
@@ -2557,7 +2378,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "批判",
@@ -2566,7 +2388,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "控えめ",
@@ -2575,7 +2398,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "比較",
@@ -2584,7 +2408,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "比較する",
@@ -2593,16 +2418,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "光る",
     "reading": "ひかる",
-    "meaning": "bersinar, bersinar",
+    "meaning": "bersinar",
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "引き出す",
@@ -2611,7 +2438,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "引き落とし",
@@ -2620,7 +2448,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "引き受ける",
@@ -2629,16 +2458,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "引き受ける",
-    "reading": "ひきうける",
-    "meaning": "mengambil, untuk melakukan",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "ひっくり返る",
@@ -2647,7 +2468,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "ひっくり返す",
@@ -2656,7 +2478,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "秘密",
@@ -2665,7 +2488,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "皮肉",
@@ -2674,7 +2498,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "品質",
@@ -2683,7 +2508,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "ヒント",
@@ -2692,7 +2518,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "ひらめく",
@@ -2701,7 +2528,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "比例",
@@ -2710,7 +2538,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "拾う",
@@ -2719,7 +2548,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "ひそひそ",
@@ -2728,7 +2558,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "密か",
@@ -2737,7 +2568,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "額",
@@ -2746,16 +2578,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "人懐こい",
     "reading": "ひとなつこい",
-    "meaning": "ramah, ramah",
+    "meaning": "ramah",
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "必然",
@@ -2764,7 +2598,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "膝",
@@ -2773,16 +2608,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "ほぼ",
     "reading": "ほぼ",
-    "meaning": "hampir, hampir",
+    "meaning": "hampir",
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "ほどける",
@@ -2791,7 +2628,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "歩道",
@@ -2800,7 +2638,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "朗らか",
@@ -2809,7 +2648,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "微笑む",
@@ -2818,7 +2658,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "保育園",
@@ -2827,7 +2668,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "補助",
@@ -2836,7 +2678,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "保険",
@@ -2845,16 +2688,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "保険",
-    "reading": "ほけん",
-    "meaning": "asuransi",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "誇り",
@@ -2863,25 +2698,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "褒める",
-    "reading": "ほめる",
-    "meaning": "memuji",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
-  },
-  {
-    "question": "褒める",
-    "reading": "ほめる",
-    "meaning": "memuji",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "骨",
@@ -2890,7 +2708,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "本音",
@@ -2899,7 +2718,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "ほのか",
@@ -2908,7 +2728,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "炎",
@@ -2917,7 +2738,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "本質",
@@ -2926,7 +2748,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "頬",
@@ -2935,7 +2758,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "保証する",
@@ -2944,7 +2768,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "干す",
@@ -2953,7 +2778,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "法案",
@@ -2962,7 +2788,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "方角",
@@ -2971,7 +2798,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "方法",
@@ -2980,7 +2808,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "崩壊",
@@ -2989,7 +2818,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "報告",
@@ -2998,7 +2828,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "報告する",
@@ -3007,7 +2838,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "法律",
@@ -3016,7 +2848,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "方針",
@@ -3025,16 +2858,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "方針",
-    "reading": "ほうしん",
-    "meaning": "kebijakan, kursus",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "報酬",
@@ -3043,16 +2868,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "放送",
-    "reading": "ほうそう",
-    "meaning": "siaran",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "保存する",
@@ -3061,16 +2878,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "保存する",
-    "reading": "ほぞんする",
-    "meaning": "melestarikan, untuk menyimpan",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "表現する",
@@ -3079,16 +2888,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "表現する",
-    "reading": "ひょうげんする",
-    "meaning": "mengekspresikan",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "評価",
@@ -3097,7 +2898,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "評価する",
@@ -3106,7 +2908,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "表面",
@@ -3115,7 +2918,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "著しい",
@@ -3124,7 +2928,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "一応",
@@ -3133,7 +2938,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "遺伝",
@@ -3142,7 +2948,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "異動",
@@ -3151,16 +2958,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "以外",
-    "reading": "いがい",
-    "meaning": "kecuali, Selain daripada",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "維持する",
@@ -3169,43 +2968,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "維持する",
-    "reading": "いじする",
-    "meaning": "mempertahankan",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
-  },
-  {
-    "question": "以上",
-    "reading": "いじょう",
-    "meaning": "di atas, lebih dari, itu saja",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
-  },
-  {
-    "question": "以下",
-    "reading": "いか",
-    "meaning": "di bawah, kurang dari",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
-  },
-  {
-    "question": "意見",
-    "reading": "いけん",
-    "meaning": "pendapat",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "いきなり",
@@ -3214,7 +2978,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "行き届く",
@@ -3223,25 +2988,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "イメージ",
-    "reading": "いめーじ",
-    "meaning": "gambar, kesan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
-  },
-  {
-    "question": "以内",
-    "reading": "いない",
-    "meaning": "di dalam",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "稲",
@@ -3250,7 +2998,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "インフラ",
@@ -3259,7 +3008,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "インフルエンザ",
@@ -3268,25 +3018,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "印鑑",
     "reading": "いんかん",
-    "meaning": "segel, perangko",
+    "meaning": "stempel atau cap nama",
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "イノベーション",
-    "reading": "いのべーしょん",
-    "meaning": "inovasi",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "祈る",
@@ -3295,7 +3038,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "インパクト",
@@ -3304,7 +3048,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "印象",
@@ -3313,34 +3058,28 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "印象",
-    "reading": "いんしょう",
-    "meaning": "kesan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "一般",
     "reading": "いっぱん",
-    "meaning": "umum, umum",
+    "meaning": "umum",
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "一般的",
     "reading": "いっぱんてき",
-    "meaning": "umum, umum",
+    "meaning": "umum",
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "一方",
@@ -3349,7 +3088,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "以来",
@@ -3358,7 +3098,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "依頼する",
@@ -3367,7 +3108,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "いらいら",
@@ -3376,7 +3118,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "潔い",
@@ -3385,7 +3128,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "意志",
@@ -3394,16 +3138,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "石",
-    "reading": "いし",
-    "meaning": "batu, batu",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "意識",
@@ -3412,7 +3148,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "意識する",
@@ -3421,16 +3158,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "忙しい",
-    "reading": "いそがしい",
-    "meaning": "sibuk",
-    "chapter": [
-      "N3",
-      "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "一切",
@@ -3439,7 +3168,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "一層",
@@ -3448,7 +3178,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "痛ましい",
@@ -3457,7 +3188,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "炒める",
@@ -3466,7 +3198,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "痛み",
@@ -3475,7 +3208,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "移転",
@@ -3484,7 +3218,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "いわゆる",
@@ -3493,16 +3228,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "いよいよ",
     "reading": "いよいよ",
-    "meaning": "akhirnya, Akhirnya, makin",
+    "meaning": "akhirnya, makin",
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "意欲的",
@@ -3511,7 +3248,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "いずれ",
@@ -3520,7 +3258,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "ジャンル",
@@ -3529,7 +3268,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "時代",
@@ -3538,7 +3278,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "事後",
@@ -3547,7 +3288,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "事業",
@@ -3556,7 +3298,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "事実",
@@ -3565,7 +3308,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "事件",
@@ -3574,7 +3318,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "時期",
@@ -3583,7 +3328,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "実感する",
@@ -3592,7 +3338,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "実験",
@@ -3601,7 +3348,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "実験する",
@@ -3610,7 +3358,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "事故",
@@ -3619,7 +3368,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "地味",
@@ -3628,7 +3378,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "人口",
@@ -3637,7 +3388,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "自信",
@@ -3646,7 +3398,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "地震",
@@ -3655,16 +3408,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "自信",
-    "reading": "じしん",
-    "meaning": "kepercayaan diri",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "実績",
@@ -3673,34 +3418,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "実績",
-    "reading": "じっせき",
-    "meaning": "prestasi, rekam jejak",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "実現する",
     "reading": "じつげんする",
-    "meaning": "menyadari, untuk mencapai",
+    "meaning": "mewujudkan, terwujud",
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "実現する",
-    "reading": "じつげんする",
-    "meaning": "menyadari, untuk mencapai",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "実力",
@@ -3709,7 +3438,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "じっと",
@@ -3718,7 +3448,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "事前",
@@ -3727,7 +3458,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "冗談",
@@ -3736,7 +3468,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "情報",
@@ -3745,7 +3478,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "条件",
@@ -3754,16 +3488,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "条件",
-    "reading": "じょうけん",
-    "meaning": "kondisi, persyaratan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "乗客",
@@ -3772,7 +3498,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "状況",
@@ -3781,16 +3508,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "状況",
-    "reading": "じょうきょう",
-    "meaning": "situasi, keadaan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "情熱",
@@ -3799,7 +3518,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "常識",
@@ -3808,7 +3528,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "状態",
@@ -3817,16 +3538,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "授業",
-    "reading": "じゅぎょう",
-    "meaning": "kelas, pelajaran",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "受験",
@@ -3835,16 +3548,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "準備",
-    "reading": "じゅんび",
-    "meaning": "persiapan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "順序",
@@ -3853,7 +3558,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "純粋",
@@ -3862,7 +3568,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "重大",
@@ -3871,16 +3578,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "住民",
     "reading": "じゅうみん",
-    "meaning": "penduduk, penduduk",
+    "meaning": "penduduk",
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "渋滞",
@@ -3889,25 +3598,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "需要",
     "reading": "じゅよう",
-    "meaning": "tuntutan",
+    "meaning": "permintaan, kebutuhan pasar",
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "需要",
-    "reading": "じゅよう",
-    "meaning": "tuntutan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "壁",
@@ -3916,7 +3618,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "株",
@@ -3925,16 +3628,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "株",
-    "reading": "かぶ",
-    "meaning": "saham, saham",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "かぶれ",
@@ -3943,16 +3638,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "角",
-    "reading": "かど",
-    "meaning": "sudut, sudut",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "かえって",
@@ -3961,7 +3648,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "科学",
@@ -3970,7 +3658,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "輝く",
@@ -3979,7 +3668,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "影",
@@ -3988,25 +3678,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "会議",
-    "reading": "かいぎ",
-    "meaning": "pertemuan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
-  },
-  {
-    "question": "会議",
-    "reading": "かいぎ",
-    "meaning": "pertemuan, konferensi",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "介護",
@@ -4015,7 +3688,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "開発",
@@ -4024,7 +3698,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "開発する",
@@ -4033,7 +3708,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "改革",
@@ -4042,7 +3718,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "解決",
@@ -4051,7 +3728,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "解決する",
@@ -4060,7 +3738,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "解雇",
@@ -4069,7 +3748,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "解雇する",
@@ -4078,7 +3758,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "改札",
@@ -4087,7 +3768,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "改善する",
@@ -4096,16 +3778,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "改善する",
-    "reading": "かいぜんする",
-    "meaning": "meningkatkan",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "かじる",
@@ -4114,7 +3788,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "抱える",
@@ -4123,16 +3798,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "抱える",
-    "reading": "かかえる",
-    "meaning": "memegang, untuk memiliki (masalah)",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "かかわる",
@@ -4141,7 +3808,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "画期的",
@@ -4150,7 +3818,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "過去",
@@ -4159,7 +3828,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "拡大",
@@ -4168,7 +3838,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "覚悟",
@@ -4177,7 +3848,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "覚悟する",
@@ -4186,7 +3858,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "革命",
@@ -4195,25 +3868,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "確認する",
     "reading": "かくにんする",
-    "meaning": "mengkonfirmasi",
+    "meaning": "memastikan, memeriksa",
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "確認する",
-    "reading": "かくにんする",
-    "meaning": "mengkonfirmasi, untuk memeriksa",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "格安",
@@ -4222,7 +3888,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "噛む",
@@ -4231,7 +3898,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "関する",
@@ -4240,7 +3908,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "感動",
@@ -4249,7 +3918,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "感動する",
@@ -4258,7 +3928,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "兼ねる",
@@ -4267,7 +3938,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "患者",
@@ -4276,7 +3948,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "勘定",
@@ -4285,7 +3958,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "感覚",
@@ -4294,16 +3968,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "関係",
-    "reading": "かんけい",
-    "meaning": "hubungan, koneksi",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "関係者",
@@ -4312,7 +3978,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "観光",
@@ -4321,7 +3988,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "観客",
@@ -4330,7 +3998,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "環境",
@@ -4339,7 +4008,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "可能性",
@@ -4348,7 +4018,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "管理する",
@@ -4357,16 +4028,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "管理する",
-    "reading": "かんりする",
-    "meaning": "mengelola, untuk mengontrol",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "完成する",
@@ -4375,16 +4038,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "完成する",
-    "reading": "かんせいする",
-    "meaning": "menyelesaikan",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "間接",
@@ -4393,7 +4048,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "感謝する",
@@ -4402,16 +4058,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "感謝する",
-    "reading": "かんしゃする",
-    "meaning": "bersyukur",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "感心する",
@@ -4420,7 +4068,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "観点",
@@ -4429,7 +4078,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "監督",
@@ -4438,7 +4088,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "緩和",
@@ -4447,7 +4098,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "枯れる",
@@ -4456,16 +4108,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "枯れる",
-    "reading": "かれる",
-    "meaning": "layu, mati (menanam)",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "仮に",
@@ -4474,7 +4118,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "借りる",
@@ -4483,16 +4128,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "カロリー",
-    "reading": "かろりー",
-    "meaning": "kalori",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "稼ぐ",
@@ -4501,7 +4138,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "仮説",
@@ -4510,7 +4148,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "賢い",
@@ -4519,7 +4158,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "貸す",
@@ -4528,7 +4168,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "肩",
@@ -4537,16 +4178,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "硬い",
-    "reading": "かたい",
-    "meaning": "keras, kaku",
-    "chapter": [
-      "N3",
-      "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "傾き",
@@ -4555,34 +4188,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "片付ける",
-    "reading": "かたづける",
-    "meaning": "merapikan",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
-  },
-  {
-    "question": "片付ける",
-    "reading": "かたづける",
-    "meaning": "merapikan, untuk disingkirkan",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
-  },
-  {
-    "question": "カテゴリー",
-    "reading": "かてごりー",
-    "meaning": "kategori",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "過程",
@@ -4591,7 +4198,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "且つ",
@@ -4600,7 +4208,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Konjungsi"
-    ]
+    ],
+    "clueLabel": "Kosakata"
   },
   {
     "question": "活動",
@@ -4609,7 +4218,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "かつて",
@@ -4618,7 +4228,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "活用する",
@@ -4627,16 +4238,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "活用する",
-    "reading": "かつようする",
-    "meaning": "memanfaatkan",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "為替",
@@ -4645,7 +4248,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "通う",
@@ -4654,7 +4258,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "痒い",
@@ -4663,7 +4268,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "飾る",
@@ -4672,7 +4278,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "風邪",
@@ -4681,16 +4288,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "ケース",
-    "reading": "けーす",
-    "meaning": "kasus",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "怪我",
@@ -4699,7 +4298,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "経営",
@@ -4708,7 +4308,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "経営する",
@@ -4717,7 +4318,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "経営者",
@@ -4726,7 +4328,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "敬語",
@@ -4735,7 +4338,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "計画",
@@ -4744,7 +4348,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "景気",
@@ -4753,34 +4358,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "景気",
-    "reading": "けいき",
-    "meaning": "kondisi bisnis, ekonomi",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "傾向",
     "reading": "けいこう",
-    "meaning": "kecenderungan, kecenderungan",
+    "meaning": "kecenderungan",
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "警察",
-    "reading": "けいさつ",
-    "meaning": "pOLISI",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "契約",
@@ -4789,16 +4378,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "契約",
-    "reading": "けいやく",
-    "meaning": "kontrak",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "契約する",
@@ -4807,34 +4388,28 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "経済",
     "reading": "けいざい",
-    "meaning": "ekonomi, ekonomi",
+    "meaning": "ekonomi",
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "結果",
     "reading": "けっか",
-    "meaning": "hasil, hasil",
+    "meaning": "hasil",
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "結果",
-    "reading": "けっか",
-    "meaning": "hasil, hasil",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "結婚式",
@@ -4843,7 +4418,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "結局",
@@ -4852,7 +4428,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "煙",
@@ -4861,7 +4438,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "件",
@@ -4870,7 +4448,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "見解",
@@ -4879,7 +4458,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "健康",
@@ -4888,7 +4468,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "謙虚",
@@ -4897,16 +4478,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
-  },
-  {
-    "question": "研究",
-    "reading": "けんきゅう",
-    "meaning": "riset",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "権利",
@@ -4915,16 +4488,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "権利",
-    "reading": "けんり",
-    "meaning": "kanan, hak istimewa",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "検索する",
@@ -4933,7 +4498,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "倹約",
@@ -4942,7 +4508,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "健全",
@@ -4951,7 +4518,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "景色",
@@ -4960,7 +4528,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "欠席",
@@ -4969,7 +4538,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "血圧",
@@ -4978,7 +4548,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "血液",
@@ -4987,7 +4558,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "結論",
@@ -4996,7 +4568,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "決定",
@@ -5005,16 +4578,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "厳しい",
-    "reading": "きびしい",
-    "meaning": "ketat, kasar",
-    "chapter": [
-      "N3",
-      "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "希望",
@@ -5023,7 +4588,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "きちんと",
@@ -5032,7 +4598,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "几帳面",
@@ -5041,16 +4608,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
-  },
-  {
-    "question": "几帳面",
-    "reading": "きちょうめん",
-    "meaning": "teliti",
-    "chapter": [
-      "N3",
-      "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "寄付",
@@ -5059,7 +4618,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "気軽",
@@ -5068,7 +4628,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "機嫌",
@@ -5077,7 +4638,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "期限",
@@ -5086,7 +4648,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "起業する",
@@ -5095,7 +4658,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "基本",
@@ -5104,7 +4668,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "記事",
@@ -5113,7 +4678,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "基準",
@@ -5122,16 +4688,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "機会",
     "reading": "きかい",
-    "meaning": "peluang, peluang",
+    "meaning": "peluang",
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "企画",
@@ -5140,7 +4708,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "企画する",
@@ -5149,16 +4718,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "期間",
-    "reading": "きかん",
-    "meaning": "periode, lamanya",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "緊張",
@@ -5167,7 +4728,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "緊張する",
@@ -5176,7 +4738,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "筋肉",
@@ -5185,7 +4748,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "禁止",
@@ -5194,7 +4758,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "均等",
@@ -5203,7 +4768,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "記入する",
@@ -5212,7 +4778,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "金属",
@@ -5221,7 +4788,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "記憶",
@@ -5230,7 +4798,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "記憶する",
@@ -5239,7 +4808,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "きらきら",
@@ -5248,16 +4818,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "霧",
     "reading": "きり",
-    "meaning": "kabut, kabut",
+    "meaning": "kabut",
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "記録",
@@ -5266,7 +4838,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "岸",
@@ -5275,7 +4848,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "規則",
@@ -5284,7 +4858,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "期待",
@@ -5293,16 +4868,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "期待",
-    "reading": "きたい",
-    "meaning": "ekspektasi, harapan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "極めて",
@@ -5311,7 +4878,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "器用",
@@ -5320,7 +4888,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "刻む",
@@ -5329,7 +4898,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "傷",
@@ -5338,7 +4908,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "気遣い",
@@ -5347,7 +4918,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "気づく",
@@ -5356,7 +4928,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "小幅",
@@ -5365,7 +4938,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "濃い",
@@ -5374,7 +4948,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "心細い",
@@ -5383,7 +4958,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "心強い",
@@ -5392,7 +4968,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "克服する",
@@ -5401,7 +4978,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "国民",
@@ -5410,16 +4988,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "国籍",
-    "reading": "こくせき",
-    "meaning": "kebangsaan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "顧客",
@@ -5428,7 +4998,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "込む",
@@ -5437,7 +5008,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "混む",
@@ -5446,16 +5018,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "コミュニケーション",
-    "reading": "こみゅにけーしょん",
-    "meaning": "komunikasi",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "根拠",
@@ -5464,7 +5028,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "好ましい",
@@ -5473,7 +5038,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "コンプライアンス",
@@ -5482,7 +5048,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "コンセプト",
@@ -5491,7 +5058,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "コンテンツ",
@@ -5500,7 +5068,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "凍る",
@@ -5509,16 +5078,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "コピー",
-    "reading": "こぴー",
-    "meaning": "menyalin",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "コラボ",
@@ -5527,7 +5088,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "転ぶ",
@@ -5536,7 +5098,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "腰",
@@ -5545,7 +5108,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "こっそり",
@@ -5554,7 +5118,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "コスト",
@@ -5563,7 +5128,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "異なる",
@@ -5572,7 +5138,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "断る",
@@ -5581,16 +5148,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "断る",
-    "reading": "ことわる",
-    "meaning": "menolak, untuk menolak",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "こつこつ",
@@ -5599,7 +5158,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "行動",
@@ -5608,7 +5168,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "講演",
@@ -5617,7 +5178,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "幸福",
@@ -5626,7 +5188,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "興奮する",
@@ -5635,7 +5198,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "高額",
@@ -5644,7 +5208,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "講義",
@@ -5653,7 +5218,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "公平",
@@ -5662,16 +5228,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
-  },
-  {
-    "question": "工場",
-    "reading": "こうじょう",
-    "meaning": "pabrik",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "効果",
@@ -5680,7 +5238,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "後悔",
@@ -5689,16 +5248,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "後悔",
-    "reading": "こうかい",
-    "meaning": "menyesali",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "交換する",
@@ -5707,16 +5258,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "交換する",
-    "reading": "こうかんする",
-    "meaning": "bertukar",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "光景",
@@ -5725,7 +5268,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "広告",
@@ -5734,16 +5278,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "広告",
-    "reading": "こうこく",
-    "meaning": "iklan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "高校",
@@ -5752,7 +5288,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "好況",
@@ -5761,7 +5298,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "光熱費",
@@ -5770,7 +5308,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "効率",
@@ -5779,7 +5318,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "効率的",
@@ -5788,7 +5328,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "交流",
@@ -5797,7 +5338,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "交流する",
@@ -5806,7 +5348,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "構成する",
@@ -5815,7 +5358,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "交渉する",
@@ -5824,25 +5368,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "交渉する",
-    "reading": "こうしょうする",
-    "meaning": "bernegosiasi",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
-  },
-  {
-    "question": "交通",
-    "reading": "こうつう",
-    "meaning": "lalu lintas, angkutan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "口座",
@@ -5851,7 +5378,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "小銭",
@@ -5860,7 +5388,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "区別する",
@@ -5869,16 +5398,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "区別する",
-    "reading": "くべつする",
-    "meaning": "membedakan",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "唇",
@@ -5887,7 +5408,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "くだらない",
@@ -5896,7 +5418,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "食い違う",
@@ -5905,7 +5428,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "組み立てる",
@@ -5914,25 +5438,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "組み立てる",
-    "reading": "くみたてる",
-    "meaning": "berkumpul",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
-  },
-  {
-    "question": "比べる",
-    "reading": "くらべる",
-    "meaning": "membandingkan",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "暮らす",
@@ -5941,7 +5448,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "クラウド",
@@ -5950,16 +5458,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "クレーム",
-    "reading": "くれーむ",
-    "meaning": "keluhan, mengeklaim",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "クレジット",
@@ -5968,7 +5468,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "クリア",
@@ -5977,7 +5478,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "繰り返す",
@@ -5986,16 +5488,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "繰り返す",
-    "reading": "くりかえす",
-    "meaning": "mengulangi",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "黒字",
@@ -6004,7 +5498,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "臭い",
@@ -6013,7 +5508,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "腐る",
@@ -6022,16 +5518,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "腐る",
-    "reading": "くさる",
-    "meaning": "membusuk, membusuk",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "くしゃみ",
@@ -6040,7 +5528,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "くつろぐ",
@@ -6049,7 +5538,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "空想",
@@ -6058,7 +5548,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "詳しい",
@@ -6067,7 +5558,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "悔しい",
@@ -6076,7 +5568,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "adj."
-    ]
+    ],
+    "clueLabel": "Kosakata"
   },
   {
     "question": "キャンセル",
@@ -6085,7 +5578,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "キャリア",
@@ -6094,7 +5588,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "拒否する",
@@ -6103,7 +5598,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "許可",
@@ -6112,7 +5608,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "許可する",
@@ -6121,7 +5618,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "距離",
@@ -6130,7 +5628,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "教育",
@@ -6139,7 +5638,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "教授",
@@ -6148,7 +5648,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "強化",
@@ -6157,7 +5658,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "共感する",
@@ -6166,7 +5668,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "供給",
@@ -6175,16 +5678,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "供給",
-    "reading": "きょうきゅう",
-    "meaning": "memasok",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "協力",
@@ -6193,7 +5688,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "協力する",
@@ -6202,7 +5698,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "競争",
@@ -6211,16 +5708,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "競争",
-    "reading": "きょうそう",
-    "meaning": "kompetisi",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "競争する",
@@ -6229,16 +5718,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "競争する",
-    "reading": "きょうそうする",
-    "meaning": "bersaing",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "共通",
@@ -6247,7 +5728,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "窮屈",
@@ -6256,7 +5738,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "救急車",
@@ -6265,7 +5748,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "給料",
@@ -6274,25 +5758,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "給料",
-    "reading": "きゅうりょう",
-    "meaning": "gaji",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
-  },
-  {
-    "question": "マーケティング",
-    "reading": "まーけてぃんぐ",
-    "meaning": "pemasaran",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "紛らわしい",
@@ -6301,16 +5768,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
-  },
-  {
-    "question": "マイペース",
-    "reading": "まいぺーす",
-    "meaning": "dengan kecepatannya sendiri",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "巻き込む",
@@ -6319,7 +5778,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "まめ",
@@ -6328,16 +5788,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
-  },
-  {
-    "question": "マナー",
-    "reading": "まなー",
-    "meaning": "tata krama",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "万が一",
@@ -6346,7 +5798,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "マニア",
@@ -6355,16 +5808,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "間に合う",
-    "reading": "まにあう",
-    "meaning": "tepat waktu",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "マニュアル",
@@ -6373,7 +5818,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "満足",
@@ -6382,16 +5828,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "満足",
-    "reading": "まんぞく",
-    "meaning": "kepuasan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "まるで",
@@ -6400,7 +5838,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "まさか",
@@ -6409,7 +5848,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "まさに",
@@ -6418,7 +5858,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "ますます",
@@ -6427,7 +5868,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "祭り",
@@ -6436,7 +5878,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "周り",
@@ -6445,7 +5888,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "迷う",
@@ -6454,16 +5898,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "迷う",
-    "reading": "まよう",
-    "meaning": "hilang, ragu-ragu",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "混ぜる",
@@ -6472,16 +5908,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "混ぜる",
-    "reading": "まぜる",
-    "meaning": "mencampur",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "貧しい",
@@ -6490,7 +5918,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "めちゃくちゃ",
@@ -6499,7 +5928,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "メディア",
@@ -6508,7 +5938,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "目処",
@@ -6517,7 +5948,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "目途",
@@ -6526,7 +5958,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "命令",
@@ -6535,7 +5968,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "めきめき",
@@ -6544,7 +5978,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "めくる",
@@ -6553,7 +5988,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "目まぐるしい",
@@ -6562,7 +5998,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "めまい",
@@ -6571,7 +6008,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "面",
@@ -6580,16 +6018,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "メンバー",
-    "reading": "めんばー",
-    "meaning": "anggota",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "面倒",
@@ -6598,7 +6028,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "免疫",
@@ -6607,7 +6038,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "綿密",
@@ -6616,7 +6048,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "面積",
@@ -6625,7 +6058,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "面接",
@@ -6634,16 +6068,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "面接",
-    "reading": "めんせつ",
-    "meaning": "wawancara",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "メンタル",
@@ -6652,7 +6078,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "メンテナンス",
@@ -6661,7 +6088,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "メリット",
@@ -6670,16 +6098,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "メッセージ",
-    "reading": "めっせーじ",
-    "meaning": "pesan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "目安",
@@ -6688,7 +6108,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "目覚ましい",
@@ -6697,7 +6118,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "身分",
@@ -6706,7 +6128,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "道順",
@@ -6715,7 +6138,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "磨く",
@@ -6724,16 +6148,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "磨く",
-    "reading": "みがく",
-    "meaning": "memoles, untuk menyikat",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "身軽",
@@ -6742,7 +6158,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "見本",
@@ -6751,7 +6168,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "惨め",
@@ -6760,7 +6178,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "味方",
@@ -6769,7 +6188,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "見守る",
@@ -6778,7 +6198,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "見直す",
@@ -6787,25 +6208,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "見直す",
-    "reading": "みなおす",
-    "meaning": "meninjau, untuk mempertimbangkan kembali",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
-  },
-  {
-    "question": "港",
-    "reading": "みなと",
-    "meaning": "pelabuhan, pelabuhan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "見逃す",
@@ -6814,7 +6218,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "実る",
@@ -6823,7 +6228,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "民族",
@@ -6832,7 +6238,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "見送る",
@@ -6841,7 +6248,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "見落とす",
@@ -6850,7 +6258,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "魅力的",
@@ -6859,7 +6268,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "ミス",
@@ -6868,7 +6278,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "みすぼらしい",
@@ -6877,7 +6288,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "認める",
@@ -6886,16 +6298,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "認める",
-    "reading": "みとめる",
-    "meaning": "mengenali, untuk mengakui",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "見つめる",
@@ -6904,16 +6308,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "見つめる",
-    "reading": "みつめる",
-    "meaning": "menatap, untuk menatap",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "見積もり",
@@ -6922,16 +6318,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "見積もり",
-    "reading": "みつもり",
-    "meaning": "memperkirakan, mengutip",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "見積",
@@ -6940,7 +6328,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "みっともない",
@@ -6949,7 +6338,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "土産",
@@ -6958,7 +6348,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "溝",
@@ -6967,7 +6358,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "持ち上げる",
@@ -6976,16 +6368,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "モチベーション",
-    "reading": "もちべーしょん",
-    "meaning": "motivasi",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "もどかしい",
@@ -6994,25 +6378,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
-  },
-  {
-    "question": "戻る",
-    "reading": "もどる",
-    "meaning": "kembali",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
-  },
-  {
-    "question": "戻る",
-    "reading": "もどる",
-    "meaning": "kembali",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "戻す",
@@ -7021,16 +6388,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "戻す",
-    "reading": "もどす",
-    "meaning": "mengembalikan (sesuatu)",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "目標",
@@ -7039,34 +6398,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "目標",
-    "reading": "もくひょう",
-    "meaning": "sasaran, target",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "目的",
     "reading": "もくてき",
-    "meaning": "tujuan, tujuan",
+    "meaning": "tujuan",
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "目的",
-    "reading": "もくてき",
-    "meaning": "tujuan, tujuan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "目的地",
@@ -7075,7 +6418,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "物々しい",
@@ -7084,7 +6428,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "物足りない",
@@ -7093,16 +6438,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "モラル",
     "reading": "もらる",
-    "meaning": "moral, moral",
+    "meaning": "moral",
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "求める",
@@ -7111,7 +6458,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "もともと",
@@ -7120,7 +6468,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "基づく",
@@ -7129,7 +6478,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "勿体ない",
@@ -7138,7 +6488,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "もっとも",
@@ -7147,7 +6498,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Konjungsi"
-    ]
+    ],
+    "clueLabel": "Kosakata"
   },
   {
     "question": "儲ける",
@@ -7156,7 +6508,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "申し込む",
@@ -7165,16 +6518,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "申し込む",
-    "reading": "もうしこむ",
-    "meaning": "melamar, untuk meminta",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "模様",
@@ -7183,7 +6528,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "夢中",
@@ -7192,7 +6538,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "無駄",
@@ -7201,7 +6548,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "矛盾",
@@ -7210,7 +6558,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "向かう",
@@ -7219,7 +6568,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "向き合う",
@@ -7228,7 +6578,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "無料",
@@ -7237,7 +6588,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "むせる",
@@ -7246,7 +6598,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "むしろ",
@@ -7255,7 +6608,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "寧ろ",
@@ -7264,7 +6618,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "蒸す",
@@ -7273,16 +6628,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "蒸す",
-    "reading": "むす",
-    "meaning": "mengukus",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "眺める",
@@ -7291,7 +6638,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "和やか",
@@ -7300,16 +6648,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
-  },
-  {
-    "question": "ナイーブ",
-    "reading": "ないーぶ",
-    "meaning": "peka, naif",
-    "chapter": [
-      "N3",
-      "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "生々しい",
@@ -7318,7 +6658,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "生ぬるい",
@@ -7327,7 +6668,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "滑らか",
@@ -7336,7 +6678,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "なにしろ",
@@ -7345,7 +6688,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "尚",
@@ -7354,7 +6698,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "なるべく",
@@ -7363,7 +6708,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "情けない",
@@ -7372,16 +6718,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
-  },
-  {
-    "question": "情けない",
-    "reading": "なさけない",
-    "meaning": "menderita, menyedihkan",
-    "chapter": [
-      "N3",
-      "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "懐かしい",
@@ -7390,16 +6728,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "adj."
-    ]
-  },
-  {
-    "question": "懐かしい",
-    "reading": "なつかしい",
-    "meaning": "rindu",
-    "chapter": [
-      "N3",
-      "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kosakata"
   },
   {
     "question": "納得する",
@@ -7408,7 +6738,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "悩む",
@@ -7417,34 +6748,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "悩む",
-    "reading": "なやむ",
-    "meaning": "khawatir, menjadi bermasalah",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "ねばねば",
     "reading": "ねばねば",
-    "meaning": "lengket, lengket",
+    "meaning": "lengket",
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
-  },
-  {
-    "question": "値段",
-    "reading": "ねだん",
-    "meaning": "harga",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "願う",
@@ -7453,7 +6768,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "眠い",
@@ -7462,7 +6778,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "年代",
@@ -7471,7 +6788,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "年金",
@@ -7480,16 +6798,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "年金",
-    "reading": "ねんきん",
-    "meaning": "pensiun",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "燃料",
@@ -7498,7 +6808,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "熱",
@@ -7507,16 +6818,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "ネットワーク",
-    "reading": "ねっとわーく",
-    "meaning": "jaringan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "根強い",
@@ -7525,7 +6828,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "鈍い",
@@ -7534,7 +6838,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "日常",
@@ -7543,7 +6848,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "握る",
@@ -7552,16 +6858,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "握る",
-    "reading": "にぎる",
-    "meaning": "mencengkeram, untuk memahami",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "賑やか",
@@ -7570,16 +6868,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
-  },
-  {
-    "question": "ニーズ",
-    "reading": "にーず",
-    "meaning": "kebutuhan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "虹",
@@ -7588,7 +6878,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "にじむ",
@@ -7597,7 +6888,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "にこにこ",
@@ -7606,16 +6898,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "荷物",
     "reading": "にもつ",
-    "meaning": "bagasi, bagasi",
+    "meaning": "bagasi",
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "人情",
@@ -7624,7 +6918,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "匂う",
@@ -7633,7 +6928,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "睨む",
@@ -7642,7 +6938,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "煮る",
@@ -7651,7 +6948,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "日程",
@@ -7660,7 +6958,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "伸ばす",
@@ -7669,7 +6968,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "のびのび",
@@ -7678,7 +6978,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "伸びる",
@@ -7687,7 +6988,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "のんびり",
@@ -7696,16 +6998,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
-  },
-  {
-    "question": "乗り換える",
-    "reading": "のりかえる",
-    "meaning": "mentransfer (kendaraan)",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "乗り越える",
@@ -7714,7 +7008,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "のろのろ",
@@ -7723,7 +7018,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "ノルマ",
@@ -7732,7 +7028,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "農業",
@@ -7741,16 +7038,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "農業",
-    "reading": "のうぎょう",
-    "meaning": "pertanian",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "能力",
@@ -7759,16 +7048,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "能力",
-    "reading": "のうりょく",
-    "meaning": "kemampuan, kemampuan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "覗く",
@@ -7777,7 +7058,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "望ましい",
@@ -7786,7 +7068,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "抜ける",
@@ -7795,7 +7078,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "抜く",
@@ -7804,16 +7088,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "抜く",
-    "reading": "ぬく",
-    "meaning": "menarik keluar, untuk menghilangkan",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "縫う",
@@ -7822,7 +7098,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "入学",
@@ -7831,7 +7108,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "入力する",
@@ -7840,7 +7118,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "おぼろげ",
@@ -7849,7 +7128,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "落ち着く",
@@ -7858,16 +7138,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "落ち着く",
-    "reading": "おちつく",
-    "meaning": "menenangkan diri",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "穏やか",
@@ -7876,16 +7148,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
-  },
-  {
-    "question": "穏やか",
-    "reading": "おだやか",
-    "meaning": "tenang, lembut",
-    "chapter": [
-      "N3",
-      "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "驚く",
@@ -7894,7 +7158,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "オフライン",
@@ -7903,7 +7168,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "奢る",
@@ -7912,7 +7178,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "追いかける",
@@ -7921,16 +7188,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "追いかける",
-    "reading": "おいかける",
-    "meaning": "mengejar",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "追い越す",
@@ -7939,7 +7198,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "お辞儀",
@@ -7948,16 +7208,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "怒る",
-    "reading": "おこる",
-    "meaning": "marah",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "奥",
@@ -7966,7 +7218,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "思い出す",
@@ -7975,16 +7228,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "思い出す",
-    "reading": "おもいだす",
-    "meaning": "mengingat, untuk diingat",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "思い込む",
@@ -7993,7 +7238,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "思いつく",
@@ -8002,7 +7248,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "思いやり",
@@ -8011,7 +7258,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "温度",
@@ -8020,7 +7268,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "オンライン",
@@ -8029,7 +7278,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "大げさ",
@@ -8038,7 +7288,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "大幅",
@@ -8047,7 +7298,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "概ね",
@@ -8056,7 +7308,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "おおよそ",
@@ -8065,7 +7318,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "大雑把",
@@ -8074,7 +7328,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "オリジナル",
@@ -8083,7 +7338,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "愚か",
@@ -8092,7 +7348,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "恐れる",
@@ -8101,7 +7358,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "恐ろしい",
@@ -8110,7 +7368,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "お得",
@@ -8119,25 +7378,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
-  },
-  {
-    "question": "お釣り",
-    "reading": "おつり",
-    "meaning": "uang kembalian)",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "応募",
     "reading": "おうぼ",
-    "meaning": "aplikasi",
+    "meaning": "melamar, mendaftar, pendaftaran",
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "横断歩道",
@@ -8146,7 +7398,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "応援",
@@ -8155,7 +7408,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "横柄",
@@ -8164,7 +7418,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "応じる",
@@ -8173,7 +7428,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "応用する",
@@ -8182,16 +7438,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "応用する",
-    "reading": "おうようする",
-    "meaning": "melamar",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "及ぶ",
@@ -8200,52 +7448,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "パートナー",
-    "reading": "ぱーとなー",
-    "meaning": "mitra",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
-  },
-  {
-    "question": "パッケージ",
-    "reading": "ぱっけーじ",
-    "meaning": "kemasan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
-  },
-  {
-    "question": "パスワード",
-    "reading": "ぱすわーど",
-    "meaning": "kata sandi",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
-  },
-  {
-    "question": "パターン",
-    "reading": "ぱたーん",
-    "meaning": "pola",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
-  },
-  {
-    "question": "ペース",
-    "reading": "ぺーす",
-    "meaning": "laju",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "ぺらぺら",
@@ -8254,16 +7458,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "ぴかぴか",
     "reading": "ぴかぴか",
-    "meaning": "berkilau, berkilau",
+    "meaning": "berkilau",
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "ぴったり",
@@ -8272,7 +7478,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "ポイント",
@@ -8281,7 +7488,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "ぽかぽか",
@@ -8290,16 +7498,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
-  },
-  {
-    "question": "プライバシー",
-    "reading": "ぷらいばしー",
-    "meaning": "pribadi",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "プライオリティ",
@@ -8308,25 +7508,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "プラットフォーム",
-    "reading": "ぷらっとふぉーむ",
-    "meaning": "platform",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
-  },
-  {
-    "question": "プレッシャー",
-    "reading": "ぷれっしゃー",
-    "meaning": "tekanan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "プレゼン",
@@ -8335,7 +7518,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "プログラム",
@@ -8344,7 +7528,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "プロジェクト",
@@ -8353,7 +7538,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "ラベル",
@@ -8362,7 +7548,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "ラフ",
@@ -8371,7 +7558,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "レベル",
@@ -8380,7 +7568,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "礼儀",
@@ -8389,7 +7578,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "レジ",
@@ -8398,7 +7588,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "歴史",
@@ -8407,16 +7598,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "連絡",
-    "reading": "れんらく",
-    "meaning": "kontak, komunikasi",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "レシピ",
@@ -8425,7 +7608,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "リアル",
@@ -8434,7 +7618,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "利益",
@@ -8443,16 +7628,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "利益",
-    "reading": "りえき",
-    "meaning": "laba, keuntungan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "リハビリ",
@@ -8461,16 +7638,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "リーダー",
-    "reading": "りーだー",
-    "meaning": "pemimpin",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "理解する",
@@ -8479,16 +7648,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "リモート",
-    "reading": "りもーと",
-    "meaning": "terpencil",
-    "chapter": [
-      "N3",
-      "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "倫理",
@@ -8497,16 +7658,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "リニューアル",
-    "reading": "りにゅーある",
-    "meaning": "pembaruan, renovasi",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "履歴書",
@@ -8515,7 +7668,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "理論",
@@ -8524,7 +7678,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "リサイクル",
@@ -8533,7 +7688,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "利子",
@@ -8542,7 +7698,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "理想",
@@ -8551,7 +7708,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "リスク",
@@ -8560,7 +7718,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "利用する",
@@ -8569,7 +7728,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "ログイン",
@@ -8578,7 +7738,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "露骨",
@@ -8587,7 +7748,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "論文",
@@ -8596,7 +7758,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "論点",
@@ -8605,16 +7768,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "ローカル",
-    "reading": "ろーかる",
-    "meaning": "lokal",
-    "chapter": [
-      "N3",
-      "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "路線",
@@ -8623,7 +7778,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "浪費",
@@ -8632,16 +7788,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "廊下",
-    "reading": "ろうか",
-    "meaning": "koridor, lorong",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "類似",
@@ -8650,25 +7798,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "ルール",
-    "reading": "るーる",
-    "meaning": "aturan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
-  },
-  {
-    "question": "ルーズ",
-    "reading": "るーず",
-    "meaning": "longgar, ceroboh",
-    "chapter": [
-      "N3",
-      "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "旅券",
@@ -8677,7 +7808,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "両替",
@@ -8686,7 +7818,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "領収書",
@@ -8695,16 +7828,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "領収書",
-    "reading": "りょうしゅうしょ",
-    "meaning": "kuitansi",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "差別",
@@ -8713,16 +7838,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "寂しい",
-    "reading": "さびしい",
-    "meaning": "kesepian",
-    "chapter": [
-      "N3",
-      "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "さほど",
@@ -8731,7 +7848,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "裁判",
@@ -8740,7 +7858,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "細胞",
@@ -8749,7 +7868,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "最中",
@@ -8758,16 +7878,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "財布",
-    "reading": "さいふ",
-    "meaning": "dompet",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "災害",
@@ -8776,7 +7888,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "債権",
@@ -8785,7 +7898,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "才能",
@@ -8794,16 +7908,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "才能",
-    "reading": "さいのう",
-    "meaning": "bakat, kemampuan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "採用",
@@ -8812,7 +7918,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "採用する",
@@ -8821,16 +7928,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "坂",
-    "reading": "さか",
-    "meaning": "lereng, bukit",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "盛ん",
@@ -8839,7 +7938,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "逆らう",
@@ -8848,7 +7948,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "叫ぶ",
@@ -8857,16 +7958,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "叫ぶ",
-    "reading": "さけぶ",
-    "meaning": "berteriak, berteriak",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "作家",
@@ -8875,7 +7968,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "咲く",
@@ -8884,25 +7978,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "咲く",
-    "reading": "さく",
-    "meaning": "mekar",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "削減",
     "reading": "さくげん",
-    "meaning": "pengurangan, pengurangan",
+    "meaning": "pengurangan",
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "削除する",
@@ -8911,7 +7998,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "産業",
@@ -8920,16 +8008,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "産業",
-    "reading": "さんぎょう",
-    "meaning": "industri",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "参考",
@@ -8938,7 +8018,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "サンプル",
@@ -8947,7 +8028,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "賛成する",
@@ -8956,7 +8038,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "酸素",
@@ -8965,16 +8048,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "サポート",
-    "reading": "さぽーと",
-    "meaning": "mendukung",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "さっぱり",
@@ -8983,7 +8058,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "支える",
@@ -8992,16 +8068,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "支える",
-    "reading": "ささえる",
-    "meaning": "mendukung",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "囁く",
@@ -9010,16 +8078,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "囁く",
-    "reading": "ささやく",
-    "meaning": "berbisik",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "差し上げる",
@@ -9028,7 +8088,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "差し支える",
@@ -9037,7 +8098,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "誘う",
@@ -9046,7 +8108,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "指す",
@@ -9055,7 +8118,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "刺す",
@@ -9064,7 +8128,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "さすが",
@@ -9073,7 +8138,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "サステナブル",
@@ -9082,7 +8148,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "札",
@@ -9091,16 +8158,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "触る",
-    "reading": "さわる",
-    "meaning": "menyentuh",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "爽やか",
@@ -9109,7 +8168,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "さぞ",
@@ -9118,16 +8178,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
-  },
-  {
-    "question": "セール",
-    "reading": "せーる",
-    "meaning": "penjualan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "成長する",
@@ -9136,7 +8188,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "制度",
@@ -9145,7 +8198,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "正義",
@@ -9154,7 +8208,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "製品",
@@ -9163,16 +8218,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "製品",
-    "reading": "せいひん",
-    "meaning": "produk, barang-barang manufaktur",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "政治",
@@ -9181,7 +8228,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "性格",
@@ -9190,25 +8238,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "正確",
     "reading": "せいかく",
-    "meaning": "tepat, tepat",
+    "meaning": "tepat",
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
-  },
-  {
-    "question": "性格",
-    "reading": "せいかく",
-    "meaning": "kepribadian, karakter",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "生活費",
@@ -9217,7 +8258,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "成功",
@@ -9226,7 +8268,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "請求する",
@@ -9235,7 +8278,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "請求書",
@@ -9244,7 +8288,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "精密",
@@ -9253,7 +8298,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "整理する",
@@ -9262,16 +8308,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "整理する",
-    "reading": "せいりする",
-    "meaning": "mengatur, untuk mengurutkan",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "政策",
@@ -9280,7 +8318,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "精算",
@@ -9289,7 +8328,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "成績",
@@ -9298,7 +8338,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "精神",
@@ -9307,7 +8348,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "せいぜい",
@@ -9316,7 +8358,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "製造する",
@@ -9325,16 +8368,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "製造する",
-    "reading": "せいぞうする",
-    "meaning": "memproduksi",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "咳",
@@ -9343,7 +8378,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "責任",
@@ -9352,16 +8388,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "責任",
-    "reading": "せきにん",
-    "meaning": "tanggung jawab",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "せっかく",
@@ -9370,7 +8398,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "設計する",
@@ -9379,16 +8408,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "設計する",
-    "reading": "せっけいする",
-    "meaning": "merancang, untuk merencanakan",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "積極的",
@@ -9397,7 +8418,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "セキュリティ",
@@ -9406,16 +8428,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "線",
-    "reading": "せん",
-    "meaning": "garis",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "宣伝",
@@ -9424,7 +8438,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "宣伝する",
@@ -9433,7 +8448,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "選挙",
@@ -9442,7 +8458,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "専門",
@@ -9451,7 +8468,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "戦略",
@@ -9460,7 +8478,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "選手",
@@ -9469,7 +8488,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "戦争",
@@ -9478,16 +8498,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "選択",
     "reading": "せんたく",
-    "meaning": "pilihan, pilihan",
+    "meaning": "pilihan",
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "先端",
@@ -9496,7 +8518,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "設置する",
@@ -9505,7 +8528,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "切ない",
@@ -9514,7 +8538,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "節約",
@@ -9523,7 +8548,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "接続する",
@@ -9532,7 +8558,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "世話",
@@ -9541,7 +8568,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "せわしない",
@@ -9550,7 +8578,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "車道",
@@ -9559,7 +8588,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "借金",
@@ -9568,7 +8598,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "しゃっくり",
@@ -9577,7 +8608,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "仕上げる",
@@ -9586,7 +8618,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "試合",
@@ -9595,7 +8628,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "シビア",
@@ -9604,7 +8638,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "しびれ",
@@ -9613,7 +8648,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "志望者",
@@ -9622,16 +8658,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "シチュエーション",
-    "reading": "しちゅえーしょん",
-    "meaning": "situasi",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "次第に",
@@ -9640,7 +8668,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "刺激する",
@@ -9649,7 +8678,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "資源",
@@ -9658,16 +8688,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "資源",
-    "reading": "しげん",
-    "meaning": "sumber daya",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "市場",
@@ -9676,7 +8698,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "仕掛け",
@@ -9685,7 +8708,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "叱る",
@@ -9694,16 +8718,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "叱る",
-    "reading": "しかる",
-    "meaning": "memarahi",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "仕方",
@@ -9712,7 +8728,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "敷金",
@@ -9721,25 +8738,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "色彩",
     "reading": "しきさい",
-    "meaning": "warna, warna",
+    "meaning": "warna",
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "しっかり",
-    "reading": "しっかり",
-    "meaning": "dengan tegas, dengan baik",
-    "chapter": [
-      "N3",
-      "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "思考",
@@ -9748,7 +8758,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "仕組み",
@@ -9757,16 +8768,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "島",
-    "reading": "しま",
-    "meaning": "pulau",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "締め切り",
@@ -9775,16 +8778,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "締め切り",
-    "reading": "しめきり",
-    "meaning": "tenggat waktu",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "締め切る",
@@ -9793,7 +8788,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "占める",
@@ -9802,7 +8798,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "示す",
@@ -9811,7 +8808,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "しみじみ",
@@ -9820,7 +8818,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "慎重",
@@ -9829,7 +8828,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "信じる",
@@ -9838,7 +8838,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "真実",
@@ -9847,7 +8848,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "神経",
@@ -9856,7 +8858,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "深刻",
@@ -9865,7 +8868,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "審判",
@@ -9874,7 +8878,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "進歩する",
@@ -9883,7 +8888,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "シンプル",
@@ -9892,7 +8898,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "信頼",
@@ -9901,16 +8908,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "信頼",
-    "reading": "しんらい",
-    "meaning": "memercayai, kepercayaan diri",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "信頼する",
@@ -9919,7 +8918,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "審査",
@@ -9928,7 +8928,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "診察",
@@ -9937,7 +8938,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "浸透",
@@ -9946,7 +8948,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "失敗",
@@ -9955,7 +8958,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "資料",
@@ -9964,7 +8968,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "支出",
@@ -9973,16 +8978,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "支出",
-    "reading": "ししゅつ",
-    "meaning": "pengeluaran",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "思想",
@@ -9991,7 +8988,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "システム",
@@ -10000,7 +8998,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "従って",
@@ -10009,7 +9008,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Konjungsi"
-    ]
+    ],
+    "clueLabel": "Kosakata"
   },
   {
     "question": "従う",
@@ -10018,7 +9018,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "視点",
@@ -10027,7 +9028,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "しとしと",
@@ -10036,7 +9038,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "湿度",
@@ -10045,7 +9048,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "失業",
@@ -10054,7 +9058,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "自然",
@@ -10063,7 +9068,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "沈む",
@@ -10072,16 +9078,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "沈む",
-    "reading": "しずむ",
-    "meaning": "tenggelam",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "処方",
@@ -10090,16 +9088,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "職業",
-    "reading": "しょくぎょう",
-    "meaning": "pekerjaan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "食欲",
@@ -10108,7 +9098,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "処理する",
@@ -10117,16 +9108,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "処理する",
-    "reading": "しょりする",
-    "meaning": "memproses, untuk menangani",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "書類",
@@ -10135,7 +9118,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "消防車",
@@ -10144,7 +9128,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "消防署",
@@ -10153,7 +9138,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "勝負",
@@ -10162,7 +9148,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "小学校",
@@ -10171,7 +9158,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "奨学金",
@@ -10180,7 +9168,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "商品",
@@ -10189,16 +9178,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "商品",
-    "reading": "しょうひん",
-    "meaning": "produk, barang dagangan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "消費者",
@@ -10207,16 +9188,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "消費者",
-    "reading": "しょうひしゃ",
-    "meaning": "konsumen",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "消費税",
@@ -10225,7 +9198,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "生じる",
@@ -10234,7 +9208,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "症状",
@@ -10243,16 +9218,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "証拠",
     "reading": "しょうこ",
-    "meaning": "bukti, bukti",
+    "meaning": "bukti",
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "消極的",
@@ -10261,7 +9238,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "証明する",
@@ -10270,16 +9248,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "証明する",
-    "reading": "しょうめいする",
-    "meaning": "membuktikan, untuk mensertifikasi",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "消滅",
@@ -10288,7 +9258,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "承認する",
@@ -10297,16 +9268,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "将来",
-    "reading": "しょうらい",
-    "meaning": "masa depan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "詳細",
@@ -10315,7 +9278,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "昇進",
@@ -10324,7 +9288,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "昇進する",
@@ -10333,7 +9298,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "焦点",
@@ -10342,7 +9308,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "出張",
@@ -10351,7 +9318,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "出張する",
@@ -10360,7 +9328,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "主張する",
@@ -10369,16 +9338,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "主張する",
-    "reading": "しゅちょうする",
-    "meaning": "menegaskan, untuk mengklaim",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "手段",
@@ -10387,7 +9348,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "主義",
@@ -10396,16 +9358,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "手術",
     "reading": "しゅじゅつ",
-    "meaning": "operasi, operasi",
+    "meaning": "operasi",
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "宿泊",
@@ -10414,7 +9378,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "祝日",
@@ -10423,7 +9388,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "縮小",
@@ -10432,7 +9398,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "瞬間",
@@ -10441,25 +9408,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "出発",
-    "reading": "しゅっぱつ",
-    "meaning": "keberangkatan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "出費",
     "reading": "しゅっぴ",
-    "meaning": "pengeluaran, pengeluaran",
+    "meaning": "pengeluaran",
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "種類",
@@ -10468,7 +9428,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "出席",
@@ -10477,7 +9438,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "集中する",
@@ -10486,16 +9448,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "集中する",
-    "reading": "しゅうちゅうする",
-    "meaning": "berkonsentrasi",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "宗教",
@@ -10504,7 +9458,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "収入",
@@ -10513,16 +9468,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "収入",
-    "reading": "しゅうにゅう",
-    "meaning": "penghasilan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "修理する",
@@ -10531,7 +9478,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "修正する",
@@ -10540,7 +9488,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "就職",
@@ -10549,7 +9498,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "就職する",
@@ -10558,7 +9508,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "そびえる",
@@ -10567,7 +9518,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "率直",
@@ -10576,25 +9528,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
-  },
-  {
-    "question": "育てる",
-    "reading": "そだてる",
-    "meaning": "meningkatkan, untuk tumbuh",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
-  },
-  {
-    "question": "育てる",
-    "reading": "そだてる",
-    "meaning": "meningkatkan, untuk mengemukakan",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "育つ",
@@ -10603,25 +9538,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "育つ",
-    "reading": "そだつ",
-    "meaning": "tumbuh dewasa",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "ソフト",
     "reading": "そふと",
-    "meaning": "lembut, lembut",
+    "meaning": "lembut",
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "ソフトウェア",
@@ -10630,7 +9558,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "素っ気ない",
@@ -10639,7 +9568,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "そっくり",
@@ -10648,7 +9578,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "底",
@@ -10657,7 +9588,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "促進",
@@ -10666,7 +9598,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "染める",
@@ -10675,7 +9608,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "損する",
@@ -10684,7 +9618,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "尊重",
@@ -10693,7 +9628,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "損害",
@@ -10702,7 +9638,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "尊敬する",
@@ -10711,16 +9648,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "尊敬する",
-    "reading": "そんけいする",
-    "meaning": "menghormati",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "損失",
@@ -10729,7 +9658,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "存在",
@@ -10738,7 +9668,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "存在する",
@@ -10747,7 +9678,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "組織",
@@ -10756,7 +9688,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "卒業",
@@ -10765,16 +9698,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "層",
     "reading": "そう",
-    "meaning": "lapisan, lapisan",
+    "meaning": "lapisan",
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "相場",
@@ -10783,16 +9718,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "相談",
-    "reading": "そうだん",
-    "meaning": "konsultasi",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "相互",
@@ -10801,16 +9728,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "相違",
     "reading": "そうい",
-    "meaning": "perbedaan, perbedaan",
+    "meaning": "perbedaan",
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "倉庫",
@@ -10819,7 +9748,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "送料",
@@ -10828,7 +9758,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "操作する",
@@ -10837,7 +9768,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "葬式",
@@ -10846,7 +9778,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "早退",
@@ -10855,7 +9788,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "争点",
@@ -10864,7 +9798,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "相当",
@@ -10873,7 +9808,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "相続",
@@ -10882,7 +9818,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "創造",
@@ -10891,7 +9828,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "想像する",
@@ -10900,16 +9838,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "想像する",
-    "reading": "そうぞうする",
-    "meaning": "membayangkan",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "想像力",
@@ -10918,7 +9848,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "騒々しい",
@@ -10927,25 +9858,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
-  },
-  {
-    "question": "素晴らしい",
-    "reading": "すばらしい",
-    "meaning": "luar biasa, bagus sekali",
-    "chapter": [
-      "N3",
-      "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "素早い",
     "reading": "すばやい",
-    "meaning": "cepat, cepat",
+    "meaning": "cepat",
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "滑る",
@@ -10954,7 +9878,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "清々しい",
@@ -10963,7 +9888,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "姿",
@@ -10972,7 +9898,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "過ごす",
@@ -10981,7 +9908,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "優れる",
@@ -10990,7 +9918,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "睡眠",
@@ -10999,7 +9928,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "推進",
@@ -11008,7 +9938,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "筋",
@@ -11017,16 +9948,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "スケジュール",
-    "reading": "すけじゅーる",
-    "meaning": "jadwal",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "スキル",
@@ -11035,16 +9958,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "すっかり",
-    "reading": "すっかり",
-    "meaning": "sama sekali, sepenuhnya",
-    "chapter": [
-      "N3",
-      "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "すっきり",
@@ -11053,7 +9968,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "少なくとも",
@@ -11062,7 +9978,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "隅",
@@ -11071,7 +9988,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "済む",
@@ -11080,16 +9998,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "スムーズ",
-    "reading": "すむーず",
-    "meaning": "mulus",
-    "chapter": [
-      "N3",
-      "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "砂",
@@ -11098,7 +10008,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "素直",
@@ -11107,16 +10018,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "すなわち",
     "reading": "すなわち",
-    "meaning": "yaitu, yaitu",
+    "meaning": "yaitu",
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "即ち",
@@ -11125,7 +10038,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Konjungsi"
-    ]
+    ],
+    "clueLabel": "Kosakata"
   },
   {
     "question": "鋭い",
@@ -11134,7 +10048,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "すする",
@@ -11143,16 +10058,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "スタートアップ",
-    "reading": "すたーとあっぷ",
-    "meaning": "rintisan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "スタッフ",
@@ -11161,7 +10068,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "素敵",
@@ -11170,25 +10078,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
-  },
-  {
-    "question": "捨てる",
-    "reading": "すてる",
-    "meaning": "membuang",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "ストレス",
     "reading": "すとれす",
-    "meaning": "menekankan",
+    "meaning": "stres",
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "束",
@@ -11197,7 +10098,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "立場",
@@ -11206,7 +10108,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "たちまち",
@@ -11215,7 +10118,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "立ち寄る",
@@ -11224,7 +10128,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "態度",
@@ -11233,16 +10138,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "態度",
-    "reading": "たいど",
-    "meaning": "sikap, tata krama",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "台風",
@@ -11251,7 +10148,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "対比",
@@ -11260,7 +10158,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "退屈",
@@ -11269,16 +10168,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "退屈",
-    "reading": "たいくつ",
-    "meaning": "membosankan, membosankan",
-    "chapter": [
-      "N3",
-      "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "体温",
@@ -11287,7 +10178,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "対応",
@@ -11296,7 +10188,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "対応する",
@@ -11305,7 +10198,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "対立する",
@@ -11314,7 +10208,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "対策",
@@ -11323,16 +10218,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "対策",
-    "reading": "たいさく",
-    "meaning": "ukuran, tindakan balasan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "退職",
@@ -11341,7 +10228,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "退職する",
@@ -11350,7 +10238,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "対象",
@@ -11359,16 +10248,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "対象",
-    "reading": "たいしょう",
-    "meaning": "target, subjek",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "大抵",
@@ -11377,7 +10258,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "タイト",
@@ -11386,16 +10268,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "滞在",
     "reading": "たいざい",
-    "meaning": "tinggal, tinggal",
+    "meaning": "tinggal",
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "炊く",
@@ -11404,16 +10288,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "たくましい",
     "reading": "たくましい",
-    "meaning": "kokoh, kokoh",
+    "meaning": "kokoh",
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "巧み",
@@ -11422,7 +10308,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "蓄える",
@@ -11431,7 +10318,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "溜まる",
@@ -11440,16 +10328,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "溜まる",
-    "reading": "たまる",
-    "meaning": "terakumulasi",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "たまたま",
@@ -11458,7 +10338,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "溜息",
@@ -11467,7 +10348,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "ためらう",
@@ -11476,7 +10358,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "溜める",
@@ -11485,16 +10368,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "棚",
-    "reading": "たな",
-    "meaning": "rak",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "短大",
@@ -11503,7 +10378,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "谷",
@@ -11512,7 +10388,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "単位",
@@ -11521,25 +10398,28 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "単に",
     "reading": "たんに",
-    "meaning": "hanya, hanya",
+    "meaning": "hanya",
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "頼もしい",
     "reading": "たのもしい",
-    "meaning": "dapat diandalkan, dapat diandalkan",
+    "meaning": "dapat diandalkan",
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "頼む",
@@ -11548,16 +10428,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "頼む",
-    "reading": "たのむ",
-    "meaning": "meminta, untuk bertanya",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "担当",
@@ -11566,7 +10438,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "担当する",
@@ -11575,7 +10448,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "担当者",
@@ -11584,7 +10458,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "確か",
@@ -11593,16 +10468,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "確かめる",
     "reading": "たしかめる",
-    "meaning": "mengkonfirmasi, untuk memverifikasi",
+    "meaning": "memastikan / memeriksa, untuk memverifikasi",
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "多少",
@@ -11611,7 +10488,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "達成する",
@@ -11620,16 +10498,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "達成する",
-    "reading": "たっせいする",
-    "meaning": "mencapai",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "タスク",
@@ -11638,7 +10508,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "建前",
@@ -11647,7 +10518,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "たとえ",
@@ -11656,16 +10528,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "たった",
     "reading": "たった",
-    "meaning": "hanya, hanya",
+    "meaning": "hanya",
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "頼る",
@@ -11674,16 +10548,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "頼る",
-    "reading": "たよる",
-    "meaning": "diandalkan",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "手当",
@@ -11692,7 +10558,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "手厚い",
@@ -11701,16 +10568,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
-  },
-  {
-    "question": "テーマ",
-    "reading": "てーま",
-    "meaning": "tema, topik",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "手掛かり",
@@ -11719,7 +10578,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "手軽",
@@ -11728,7 +10588,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "手形",
@@ -11737,7 +10598,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "手本",
@@ -11746,7 +10608,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "提案",
@@ -11755,7 +10618,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "提案する",
@@ -11764,7 +10628,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "定価",
@@ -11773,7 +10638,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "定期券",
@@ -11782,16 +10648,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "丁寧",
-    "reading": "ていねい",
-    "meaning": "sopan, hati-hati",
-    "chapter": [
-      "N3",
-      "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "定年",
@@ -11800,7 +10658,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "提出する",
@@ -11809,7 +10668,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "敵",
@@ -11818,7 +10678,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "適応する",
@@ -11827,7 +10688,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "てきぱき",
@@ -11836,16 +10698,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "適切",
     "reading": "てきせつ",
-    "meaning": "sesuai, sesuai",
+    "meaning": "sesuai",
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "手間",
@@ -11854,7 +10718,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "点",
@@ -11863,7 +10728,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "天井",
@@ -11872,7 +10738,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "展開",
@@ -11881,7 +10748,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "展開する",
@@ -11890,7 +10758,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "典型的",
@@ -11899,7 +10768,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "転勤",
@@ -11908,7 +10778,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "転職する",
@@ -11917,7 +10788,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "手数料",
@@ -11926,7 +10798,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "哲学",
@@ -11935,7 +10808,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "手続き",
@@ -11944,16 +10818,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "手続き",
-    "reading": "てつづき",
-    "meaning": "prosedur, formalitas",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "撤退",
@@ -11962,7 +10828,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "飛び出す",
@@ -11971,16 +10838,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "飛び出す",
-    "reading": "とびだす",
-    "meaning": "melompat keluar",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "飛び込む",
@@ -11989,7 +10848,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "乏しい",
@@ -11998,7 +10858,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "土地",
@@ -12007,16 +10868,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "途中",
-    "reading": "とちゅう",
-    "meaning": "dalam perjalanan, di pertengahan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "届け出",
@@ -12025,25 +10878,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "届ける",
-    "reading": "とどける",
-    "meaning": "menyampaikan, untuk melaporkan",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
-  },
-  {
-    "question": "届ける",
-    "reading": "とどける",
-    "meaning": "menyampaikan, untuk mengirimkan",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "届け先",
@@ -12052,7 +10888,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "届く",
@@ -12061,16 +10898,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "届く",
-    "reading": "とどく",
-    "meaning": "mencapai, untuk dikirimkan",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "溶かす",
@@ -12079,7 +10908,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "溶ける",
@@ -12088,7 +10918,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "ときめく",
@@ -12097,7 +10928,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "とっくに",
@@ -12106,16 +10938,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
-  },
-  {
-    "question": "ところで",
-    "reading": "ところで",
-    "meaning": "omong-omong",
-    "chapter": [
-      "N3",
-      "Konjungsi"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "得する",
@@ -12124,7 +10948,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "特徴",
@@ -12133,7 +10958,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "特定",
@@ -12142,7 +10968,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "得点",
@@ -12151,7 +10978,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "伴う",
@@ -12160,7 +10988,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "とにかく",
@@ -12169,7 +10998,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "通る",
@@ -12178,7 +11008,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "通す",
@@ -12187,7 +11018,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "トラブル",
@@ -12196,16 +11028,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "トラブルシューティング",
-    "reading": "とらぶるしゅーてぃんぐ",
-    "meaning": "pemecahan masalah",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "トレンド",
@@ -12214,7 +11038,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "取り上げる",
@@ -12223,7 +11048,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "取引",
@@ -12232,7 +11058,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "取引する",
@@ -12241,7 +11068,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "取り消す",
@@ -12250,16 +11078,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "取り消す",
-    "reading": "とりけす",
-    "meaning": "membatalkan",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "取り組む",
@@ -12268,7 +11088,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "都市",
@@ -12277,16 +11098,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "到着",
-    "reading": "とうちゃく",
-    "meaning": "kedatangan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "統合",
@@ -12295,7 +11108,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "投票",
@@ -12304,7 +11118,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "統一する",
@@ -12313,7 +11128,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "当時",
@@ -12322,7 +11138,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "搭乗",
@@ -12331,7 +11148,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "登録する",
@@ -12340,16 +11158,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "登録する",
-    "reading": "とうろくする",
-    "meaning": "mendaftar",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "倒産する",
@@ -12358,7 +11168,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "投資",
@@ -12367,7 +11178,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "投資する",
@@ -12376,7 +11188,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "到底",
@@ -12385,7 +11198,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "粒",
@@ -12394,7 +11208,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "潰れる",
@@ -12403,7 +11218,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "潰す",
@@ -12412,7 +11228,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "呟く",
@@ -12421,16 +11238,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "遂に",
     "reading": "ついに",
-    "meaning": "akhirnya, akhirnya",
+    "meaning": "akhirnya",
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "掴む",
@@ -12439,25 +11258,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "掴む",
-    "reading": "つかむ",
-    "meaning": "meraih, untuk merebut",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "疲れ",
     "reading": "つかれ",
-    "meaning": "kelelahan, kelelahan",
+    "meaning": "kelelahan",
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "漬ける",
@@ -12466,7 +11278,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "付き合う",
@@ -12475,16 +11288,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "つまり",
-    "reading": "つまり",
-    "meaning": "dengan kata lain, artinya",
-    "chapter": [
-      "N3",
-      "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "詰まる",
@@ -12493,16 +11298,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "つまずく",
     "reading": "つまずく",
-    "meaning": "tersandung, tersandung",
+    "meaning": "tersandung",
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "爪",
@@ -12511,7 +11318,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "詰める",
@@ -12520,7 +11328,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "積む",
@@ -12529,7 +11338,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "つるつる",
@@ -12538,7 +11348,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "通帳",
@@ -12547,7 +11358,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "通勤する",
@@ -12556,7 +11368,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "打ち合わせる",
@@ -12565,7 +11378,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "打ち込む",
@@ -12574,7 +11388,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "植える",
@@ -12583,7 +11398,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "浮かぶ",
@@ -12592,16 +11408,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "浮かぶ",
-    "reading": "うかぶ",
-    "meaning": "mengapung, untuk terlintas dalam pikiran",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "受け取る",
@@ -12610,7 +11418,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "うっかり",
@@ -12619,7 +11428,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "うなずく",
@@ -12628,7 +11438,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "頷く",
@@ -12637,7 +11448,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "運賃",
@@ -12646,7 +11458,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "運動",
@@ -12655,16 +11468,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "運命",
     "reading": "うんめい",
-    "meaning": "takdir, takdir",
+    "meaning": "takdir",
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "うんざり",
@@ -12673,16 +11488,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
-  },
-  {
-    "question": "裏",
-    "reading": "うら",
-    "meaning": "kembali, balik",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "羨ましい",
@@ -12691,16 +11498,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "adj."
-    ]
-  },
-  {
-    "question": "羨ましい",
-    "reading": "うらやましい",
-    "meaning": "iri, cemburu",
-    "chapter": [
-      "N3",
-      "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kosakata"
   },
   {
     "question": "裏付け",
@@ -12709,7 +11508,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "売上",
@@ -12718,7 +11518,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "売り上げ",
@@ -12727,7 +11528,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "うろうろ",
@@ -12736,25 +11538,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
-  },
-  {
-    "question": "嘘",
-    "reading": "うそ",
-    "meaning": "berbohong",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
-  },
-  {
-    "question": "薄い",
-    "reading": "うすい",
-    "meaning": "tipis, lampu, lemah",
-    "chapter": [
-      "N3",
-      "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "疑う",
@@ -12763,16 +11548,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "疑う",
-    "reading": "うたがう",
-    "meaning": "ragu, untuk mencurigai",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "疎い",
@@ -12781,7 +11558,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "うとうと",
@@ -12790,16 +11568,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "うっとり",
     "reading": "うっとり",
-    "meaning": "terpesona, terpesona",
+    "meaning": "terpesona",
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "噂",
@@ -12808,25 +11588,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "輪",
-    "reading": "わ",
-    "meaning": "cincin, lingkaran, roda",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
-  },
-  {
-    "question": "ワースト",
-    "reading": "わーすと",
-    "meaning": "terburuk",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "ワイヤレス",
@@ -12835,25 +11598,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
-  },
-  {
-    "question": "沸かす",
-    "reading": "わかす",
-    "meaning": "mendidih (transitif)",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
-  },
-  {
-    "question": "沸く",
-    "reading": "わく",
-    "meaning": "mendidih",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "わくわく",
@@ -12862,7 +11608,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "割",
@@ -12871,7 +11618,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "割合",
@@ -12880,7 +11628,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "割引",
@@ -12889,7 +11638,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "割り勘",
@@ -12898,7 +11648,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "わざわざ",
@@ -12907,16 +11658,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "僅か",
     "reading": "わずか",
-    "meaning": "sedikit, sedikit",
+    "meaning": "sedikit",
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "ウェブサイト",
@@ -12925,7 +11678,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "家賃",
@@ -12934,7 +11688,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "やがて",
@@ -12943,7 +11698,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "焼ける",
@@ -12952,7 +11708,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "厄介",
@@ -12961,7 +11718,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "薬局",
@@ -12970,25 +11728,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "焼く",
-    "reading": "やく",
-    "meaning": "memanggang, untuk memanggang",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
-  },
-  {
-    "question": "約束",
-    "reading": "やくそく",
-    "meaning": "janji, janji temu",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "役割",
@@ -12997,7 +11738,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "優しい",
@@ -13006,7 +11748,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "痩せる",
@@ -13015,25 +11758,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "柔らかい",
-    "reading": "やわらかい",
-    "meaning": "lembut, lembut",
-    "chapter": [
-      "N3",
-      "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "やや",
     "reading": "やや",
-    "meaning": "agak, agak",
+    "meaning": "agak",
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "呼びかける",
@@ -13042,16 +11778,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "汚れる",
-    "reading": "よごれる",
-    "meaning": "menjadi kotor",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "汚す",
@@ -13060,7 +11788,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "予感",
@@ -13069,7 +11798,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "預金",
@@ -13078,7 +11808,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "欲張り",
@@ -13087,7 +11818,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "欲望",
@@ -13096,7 +11828,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "抑制",
@@ -13105,16 +11838,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "喜ぶ",
-    "reading": "よろこぶ",
-    "meaning": "bergembira, untuk bersukacita",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "予算",
@@ -13123,25 +11848,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "予算",
-    "reading": "よさん",
-    "meaning": "anggaran",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
-  },
-  {
-    "question": "予定",
-    "reading": "よてい",
-    "meaning": "jadwal, rencana",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "幼稚園",
@@ -13150,7 +11858,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "容疑者",
@@ -13159,16 +11868,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "用意",
-    "reading": "ようい",
-    "meaning": "persiapan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "要因",
@@ -13177,7 +11878,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "要求する",
@@ -13186,7 +11888,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "様子",
@@ -13195,7 +11898,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "要点",
@@ -13204,16 +11908,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "ようやく",
     "reading": "ようやく",
-    "meaning": "akhirnya, akhirnya",
+    "meaning": "akhirnya",
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "要約",
@@ -13222,7 +11928,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "予約する",
@@ -13231,7 +11938,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "余裕",
@@ -13240,16 +11948,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "ユニーク",
-    "reading": "ゆにーく",
-    "meaning": "unik",
-    "chapter": [
-      "N3",
-      "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "輸入する",
@@ -13258,7 +11958,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "揺れる",
@@ -13267,16 +11968,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "揺れる",
-    "reading": "ゆれる",
-    "meaning": "mengguncang, untuk bergoyang",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "許す",
@@ -13285,16 +11978,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
-  },
-  {
-    "question": "許す",
-    "reading": "ゆるす",
-    "meaning": "memaafkan, untuk mengizinkan",
-    "chapter": [
-      "N3",
-      "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "輸出する",
@@ -13303,7 +11988,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "豊か",
@@ -13312,7 +11998,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "友情",
@@ -13321,7 +12008,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "勇気",
@@ -13330,16 +12018,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "勇気",
-    "reading": "ゆうき",
-    "meaning": "keberanian",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "有料",
@@ -13348,7 +12028,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "融資",
@@ -13357,7 +12038,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "優勝",
@@ -13366,7 +12048,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "優秀",
@@ -13375,7 +12058,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "ざあざあ",
@@ -13384,7 +12068,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "在庫",
@@ -13393,25 +12078,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "在庫",
-    "reading": "ざいこ",
-    "meaning": "saham, inventaris",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
-  },
-  {
-    "question": "材料",
-    "reading": "ざいりょう",
-    "meaning": "bahan, bahan-bahan",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "残業",
@@ -13420,7 +12088,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "残業する",
@@ -13429,16 +12098,18 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "ざらざら",
     "reading": "ざらざら",
-    "meaning": "kasar, kasar",
+    "meaning": "kasar",
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "税金",
@@ -13447,16 +12118,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
-  },
-  {
-    "question": "税金",
-    "reading": "ぜいきん",
-    "meaning": "pajak",
-    "chapter": [
-      "N3",
-      "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "贅沢",
@@ -13465,7 +12128,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata sifat na"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   },
   {
     "question": "全体",
@@ -13474,7 +12138,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "前提",
@@ -13483,7 +12148,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata benda"
-    ]
+    ],
+    "clueLabel": "Kata benda"
   },
   {
     "question": "属する",
@@ -13492,7 +12158,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "ぞっと",
@@ -13501,7 +12168,8 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata keterangan"
-    ]
+    ],
+    "clueLabel": "Kata keterangan"
   },
   {
     "question": "増加する",
@@ -13510,250 +12178,17 @@ window.VOCABS = [
     "chapter": [
       "N3",
       "Kata kerja"
-    ]
+    ],
+    "clueLabel": "Kata kerja"
   },
   {
     "question": "図々しい",
     "reading": "ずうずうしい",
-    "meaning": "kurang ajar, kurang ajar",
+    "meaning": "kurang ajar / tidak tahu malu",
     "chapter": [
       "N3",
       "Kata sifat i"
-    ]
+    ],
+    "clueLabel": "Kata sifat"
   }
 ];
-// === Auto-enrichment: add romaji & synonyms_id if missing ===
-(function () {
-  // Convert Katakana to Hiragana for normalization
-  function kataToHira(str) {
-    return str.replace(/[\u30A1-\u30F6]/g, (ch) =>
-      String.fromCharCode(ch.charCodeAt(0) - 0x60),
-    );
-  }
-
-  // Basic Hepburn romaji map (hiragana). Covers digraphs, sokuon (っ), and chouon (ー)
-  const DIGRAPHS = {
-    きゃ: "kya",
-    きゅ: "kyu",
-    きょ: "kyo",
-    しゃ: "sha",
-    しゅ: "shu",
-    しょ: "sho",
-    ちゃ: "cha",
-    ちゅ: "chu",
-    ちょ: "cho",
-    にゃ: "nya",
-    にゅ: "nyu",
-    にょ: "nyo",
-    ひゃ: "hya",
-    ひゅ: "hyu",
-    ひょ: "hyo",
-    みゃ: "mya",
-    みゅ: "myu",
-    みょ: "myo",
-    りゃ: "rya",
-    りゅ: "ryu",
-    りょ: "ryo",
-    ぎゃ: "gya",
-    ぎゅ: "gyu",
-    ぎょ: "gyo",
-    じゃ: "ja",
-    じゅ: "ju",
-    じょ: "jo",
-    びゃ: "bya",
-    びゅ: "byu",
-    びょ: "byo",
-    ぴゃ: "pya",
-    ぴゅ: "pyu",
-    ぴょ: "pyo",
-  };
-  const MONO = {
-    あ: "a",
-    い: "i",
-    う: "u",
-    え: "e",
-    お: "o",
-    か: "ka",
-    き: "ki",
-    く: "ku",
-    け: "ke",
-    こ: "ko",
-    さ: "sa",
-    し: "shi",
-    す: "su",
-    せ: "se",
-    そ: "so",
-    た: "ta",
-    ち: "chi",
-    つ: "tsu",
-    て: "te",
-    と: "to",
-    な: "na",
-    に: "ni",
-    ぬ: "nu",
-    ね: "ne",
-    の: "no",
-    は: "ha",
-    ひ: "hi",
-    ふ: "fu",
-    へ: "he",
-    ほ: "ho",
-    ま: "ma",
-    み: "mi",
-    む: "mu",
-    め: "me",
-    も: "mo",
-    や: "ya",
-    ゆ: "yu",
-    よ: "yo",
-    ら: "ra",
-    り: "ri",
-    る: "ru",
-    れ: "re",
-    ろ: "ro",
-    わ: "wa",
-    を: "o",
-    ん: "n",
-    が: "ga",
-    ぎ: "gi",
-    ぐ: "gu",
-    げ: "ge",
-    ご: "go",
-    ざ: "za",
-    じ: "ji",
-    ず: "zu",
-    ぜ: "ze",
-    ぞ: "zo",
-    だ: "da",
-    ぢ: "ji",
-    づ: "zu",
-    で: "de",
-    ど: "do",
-    ば: "ba",
-    び: "bi",
-    ぶ: "bu",
-    べ: "be",
-    ぼ: "bo",
-    ぱ: "pa",
-    ぴ: "pi",
-    ぷ: "pu",
-    ぺ: "pe",
-    ぽ: "po",
-    ぁ: "a",
-    ぃ: "i",
-    ぅ: "u",
-    ぇ: "e",
-    ぉ: "o",
-    ゎ: "wa",
-    ゕ: "ka",
-    ゖ: "ke",
-    ー: "-", // marker for long vowel; handled later
-  };
-
-  function longVowel(prev) {
-    if (!prev) return "";
-    return prev
-      .replace(/a$/, "a")
-      .replace(/i$/, "i")
-      .replace(/u$/, "u")
-      .replace(/e$/, "e")
-      .replace(/o$/, "o");
-  }
-
-  function kanaToRomaji(input) {
-    if (!input) return "";
-    const hira = kataToHira(input);
-    let out = "";
-    for (let i = 0; i < hira.length; i++) {
-      const c = hira[i];
-      const next = hira[i + 1] || "";
-      const pair = c + next;
-
-      // sokuon っ (double next consonant)
-      if (c === "っ") {
-        const after = hira[i + 1] || "";
-        // try digraph first
-        const dig = after + (hira[i + 2] || "");
-        let base = DIGRAPHS[dig] || MONO[after] || "";
-        if (base) out += base[0];
-        continue;
-      }
-
-      // digraphs (きゃ etc.)
-      if (DIGRAPHS[pair]) {
-        out += DIGRAPHS[pair];
-        i++; // skip next
-        continue;
-      }
-
-      if (c === "ー") {
-        // extend previous vowel
-        const prev = out[out.length - 1] || "";
-        if (prev) out += prev; // naive doubling (e.g., コーヒー -> koohii)
-        continue;
-      }
-
-      // punctuation or space
-      if (/[^\u3041-\u3096]/.test(c)) {
-        out += c;
-        continue;
-      }
-
-      out += MONO[c] || c;
-    }
-
-    // Fix common romaji niceties
-    out = out
-      .replace(/nn([bmp])/g, "m$1") // ん before b/m/p -> m
-      .replace(/ou/g, "ou");
-
-    return out.toLowerCase().replace(/\s+/g, ""); // remove Japanese spaces
-  }
-
-  // Derive simple Indonesian synonyms from meaning text (best-effort)
-  function deriveSynonyms(meaning, existing) {
-    if (existing && Array.isArray(existing) && existing.length) return existing;
-    if (!meaning) return [];
-    const text = String(meaning).toLowerCase();
-    let raw = text
-      .replace(/[\[\]（）()]/g, ",")
-      .replace(/；|・|—|–|—|\/|;|\|/g, ",")
-      .replace(/\s{2,}/g, " ");
-    let parts = raw
-      .split(",")
-      .map((s) => s.trim())
-      .filter(Boolean);
-
-    // normalize common variants
-    const expanded = new Set();
-    for (const p of parts) {
-      expanded.add(p);
-      if (p.includes(" ")) expanded.add(p.replace(/\s+/g, "-"));
-      if (p.includes("-")) expanded.add(p.replace(/-/g, " "));
-    }
-    return Array.from(expanded).slice(0, 6); // cap to avoid bloat
-  }
-
-  // Manual overrides for key entries
-  const OVERRIDES_BY_QUESTION = {
-    冷蔵庫: ["lemari es", "lemari-es", "lemari pendingin"],
-    コップ: ["gelas", "gelas minum"],
-    グラス: ["gelas kaca", "gelas minum"],
-    ヒーター: ["pemanas", "penghangat ruangan"],
-    エアコン: ["ac", "pendingin ruangan", "air conditioner"],
-  };
-
-  window.VOCABS = (window.VOCABS || []).map((v) => {
-    const reading = v.reading || "";
-    const romaji = v.romaji || kanaToRomaji(reading);
-    const override = OVERRIDES_BY_QUESTION[v.question];
-    const synonyms_id =
-      Array.isArray(v.synonyms_id) && v.synonyms_id.length
-        ? v.synonyms_id
-        : override
-          ? override
-          : deriveSynonyms(v.meaning, v.synonyms_id);
-
-    return Object.assign({}, v, { romaji, synonyms_id });
-  });
-})();

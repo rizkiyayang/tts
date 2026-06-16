@@ -1,284 +1,2314 @@
-// === VOCABS N4 ===
-// Format:
-// { question, reading, meaning, chapter }
-// `question` keeps the original kanji/kana, while `reading` is hiragana for the TTS grid.
-
-const N4_VOCAB_ROWS = [
-  // === PERGAULAN & PERASAAN ===
-  ["Pergaulan & Perasaan", "具合", "ぐあい", "keadaan, kondisi"],
-  ["Pergaulan & Perasaan", "関係", "かんけい", "hubungan"],
-  ["Pergaulan & Perasaan", "気", "き", "udara, semangat, suasana"],
-  ["Pergaulan & Perasaan", "気分", "きぶん", "perasaan, suasana, keadaan kesehatan"],
-  ["Pergaulan & Perasaan", "気持ち", "きもち", "perasaan, suasana"],
-  ["Pergaulan & Perasaan", "おかげ", "おかげ", "berkat, karena"],
-  ["Pergaulan & Perasaan", "お見舞い", "おみまい", "kunjungan, menjenguk orang sakit"],
-  ["Pergaulan & Perasaan", "お土産", "おみやげ", "oleh-oleh, suvenir"],
-  ["Pergaulan & Perasaan", "お礼", "おれい", "hormat, terima kasih"],
-  ["Pergaulan & Perasaan", "都合", "つごう", "keadaan, urusan, kenyamanan waktu"],
-  ["Pergaulan & Perasaan", "案内", "あんない", "panduan, informasi"],
-  ["Pergaulan & Perasaan", "安心", "あんしん", "lega, tenang"],
-  ["Pergaulan & Perasaan", "安全", "あんぜん", "aman, keselamatan"],
-  ["Pergaulan & Perasaan", "意見", "いけん", "pendapat"],
-  ["Pergaulan & Perasaan", "嘘", "うそ", "bohong"],
-  ["Pergaulan & Perasaan", "遠慮", "えんりょ", "sungkan, menahan diri"],
-  ["Pergaulan & Perasaan", "お祝い", "おいわい", "perayaan, ucapan selamat"],
-  ["Pergaulan & Perasaan", "贈り物", "おくりもの", "hadiah"],
-  ["Pergaulan & Perasaan", "謝る", "あやまる", "meminta maaf"],
-  ["Pergaulan & Perasaan", "喜ぶ", "よろこぶ", "senang, gembira"],
-  ["Pergaulan & Perasaan", "泣く", "なく", "menangis"],
-  ["Pergaulan & Perasaan", "笑う", "わらう", "tertawa"],
-  ["Pergaulan & Perasaan", "怒る", "おこる", "marah"],
-  ["Pergaulan & Perasaan", "困る", "こまる", "kesulitan, bingung"],
-
-  // === PETA & LOKASI ===
-  ["Peta & Lokasi", "場所", "ばしょ", "tempat"],
-  ["Peta & Lokasi", "美術館", "びじゅつかん", "gedung kesenian, museum seni"],
-  ["Peta & Lokasi", "地理", "ちり", "ilmu bumi, geografi"],
-  ["Peta & Lokasi", "駐車場", "ちゅうしゃじょう", "tempat parkir"],
-  ["Peta & Lokasi", "動物園", "どうぶつえん", "kebun binatang"],
-  ["Peta & Lokasi", "ガソリンスタンド", "がそりんすたんど", "pompa bensin"],
-  ["Peta & Lokasi", "飛行場", "ひこうじょう", "bandara, lapangan terbang"],
-  ["Peta & Lokasi", "田舎", "いなか", "desa, dusun, kampung"],
-  ["Peta & Lokasi", "海岸", "かいがん", "pantai, tepi laut"],
-  ["Peta & Lokasi", "会場", "かいじょう", "ruang rapat, tempat pertemuan"],
-  ["Peta & Lokasi", "近所", "きんじょ", "daerah sekitar"],
-  ["Peta & Lokasi", "郊外", "こうがい", "luar kota"],
-  ["Peta & Lokasi", "工場", "こうじょう", "pabrik"],
-  ["Peta & Lokasi", "講堂", "こうどう", "aula"],
-  ["Peta & Lokasi", "港", "みなと", "pelabuhan"],
-  ["Peta & Lokasi", "湖", "みずうみ", "danau"],
-  ["Peta & Lokasi", "寺", "てら", "kuil Buddha"],
-  ["Peta & Lokasi", "神社", "じんじゃ", "kuil Shinto"],
-  ["Peta & Lokasi", "交差点", "こうさてん", "perempatan, persimpangan"],
-  ["Peta & Lokasi", "坂", "さか", "tanjakan, lereng"],
-  ["Peta & Lokasi", "角", "かど", "sudut"],
-  ["Peta & Lokasi", "道", "みち", "jalan"],
-  ["Peta & Lokasi", "通り", "とおり", "jalan, lalu lintas"],
-  ["Peta & Lokasi", "住所", "じゅうしょ", "alamat"],
-  ["Peta & Lokasi", "場所代", "ばしょだい", "biaya tempat"],
-
-  // === TRANSPORTASI & PERJALANAN ===
-  ["Transportasi & Perjalanan", "交通", "こうつう", "lalu lintas, transportasi"],
-  ["Transportasi & Perjalanan", "特急", "とっきゅう", "kereta ekspres khusus"],
-  ["Transportasi & Perjalanan", "急行", "きゅうこう", "kereta ekspres"],
-  ["Transportasi & Perjalanan", "普通", "ふつう", "biasa, lokal"],
-  ["Transportasi & Perjalanan", "汽車", "きしゃ", "kereta api"],
-  ["Transportasi & Perjalanan", "船", "ふね", "kapal"],
-  ["Transportasi & Perjalanan", "空港", "くうこう", "bandara"],
-  ["Transportasi & Perjalanan", "飛行機", "ひこうき", "pesawat terbang"],
-  ["Transportasi & Perjalanan", "運転", "うんてん", "mengemudi"],
-  ["Transportasi & Perjalanan", "運転手", "うんてんしゅ", "sopir"],
-  ["Transportasi & Perjalanan", "乗り物", "のりもの", "kendaraan"],
-  ["Transportasi & Perjalanan", "乗り換え", "のりかえ", "pindah kendaraan"],
-  ["Transportasi & Perjalanan", "切符", "きっぷ", "tiket"],
-  ["Transportasi & Perjalanan", "出発", "しゅっぱつ", "keberangkatan"],
-  ["Transportasi & Perjalanan", "到着", "とうちゃく", "kedatangan"],
-  ["Transportasi & Perjalanan", "旅行", "りょこう", "perjalanan, wisata"],
-  ["Transportasi & Perjalanan", "旅館", "りょかん", "penginapan Jepang"],
-  ["Transportasi & Perjalanan", "予約", "よやく", "reservasi"],
-  ["Transportasi & Perjalanan", "見物", "けんぶつ", "tamasya, melihat-lihat"],
-  ["Transportasi & Perjalanan", "見送り", "みおくり", "mengantar keberangkatan"],
-
-  // === KEGIATAN & KOMUNIKASI ===
-  ["Kegiatan & Komunikasi", "挨拶", "あいさつ", "salam, sapaan"],
-  ["Kegiatan & Komunikasi", "連絡", "れんらく", "kontak, menghubungi"],
-  ["Kegiatan & Komunikasi", "返事", "へんじ", "jawaban, balasan"],
-  ["Kegiatan & Komunikasi", "相談", "そうだん", "konsultasi"],
-  ["Kegiatan & Komunikasi", "説明", "せつめい", "penjelasan"],
-  ["Kegiatan & Komunikasi", "質問", "しつもん", "pertanyaan"],
-  ["Kegiatan & Komunikasi", "答え", "こたえ", "jawaban"],
-  ["Kegiatan & Komunikasi", "用意", "ようい", "persiapan"],
-  ["Kegiatan & Komunikasi", "準備", "じゅんび", "persiapan"],
-  ["Kegiatan & Komunikasi", "練習", "れんしゅう", "latihan"],
-  ["Kegiatan & Komunikasi", "予習", "よしゅう", "persiapan pelajaran"],
-  ["Kegiatan & Komunikasi", "復習", "ふくしゅう", "ulangan, review pelajaran"],
-  ["Kegiatan & Komunikasi", "研究", "けんきゅう", "penelitian"],
-  ["Kegiatan & Komunikasi", "発音", "はつおん", "pelafalan"],
-  ["Kegiatan & Komunikasi", "翻訳", "ほんやく", "terjemahan"],
-  ["Kegiatan & Komunikasi", "放送", "ほうそう", "siaran"],
-  ["Kegiatan & Komunikasi", "約束", "やくそく", "janji"],
-  ["Kegiatan & Komunikasi", "用事", "ようじ", "urusan"],
-  ["Kegiatan & Komunikasi", "会議", "かいぎ", "rapat"],
-  ["Kegiatan & Komunikasi", "会話", "かいわ", "percakapan"],
-  ["Kegiatan & Komunikasi", "紹介", "しょうかい", "perkenalan, pengenalan"],
-  ["Kegiatan & Komunikasi", "招待", "しょうたい", "undangan"],
-  ["Kegiatan & Komunikasi", "注意", "ちゅうい", "perhatian, peringatan"],
-  ["Kegiatan & Komunikasi", "連れて行く", "つれていく", "membawa pergi"],
-  ["Kegiatan & Komunikasi", "手伝う", "てつだう", "membantu"],
-
-  // === BENDA & KEHIDUPAN ===
-  ["Benda & Kehidupan", "石", "いし", "batu"],
-  ["Benda & Kehidupan", "枝", "えだ", "ranting"],
-  ["Benda & Kehidupan", "草", "くさ", "rumput"],
-  ["Benda & Kehidupan", "葉", "は", "daun"],
-  ["Benda & Kehidupan", "星", "ほし", "bintang"],
-  ["Benda & Kehidupan", "雲", "くも", "awan"],
-  ["Benda & Kehidupan", "光", "ひかり", "cahaya"],
-  ["Benda & Kehidupan", "音", "おと", "bunyi, suara"],
-  ["Benda & Kehidupan", "線", "せん", "garis"],
-  ["Benda & Kehidupan", "表", "おもて", "depan, permukaan"],
-  ["Benda & Kehidupan", "裏", "うら", "belakang, sisi balik"],
-  ["Benda & Kehidupan", "袋", "ふくろ", "kantong, tas"],
-  ["Benda & Kehidupan", "財布", "さいふ", "dompet"],
-  ["Benda & Kehidupan", "指輪", "ゆびわ", "cincin"],
-  ["Benda & Kehidupan", "人形", "にんぎょう", "boneka"],
-  ["Benda & Kehidupan", "棚", "たな", "rak"],
-  ["Benda & Kehidupan", "畳", "たたみ", "tatami"],
-  ["Benda & Kehidupan", "布団", "ふとん", "kasur futon"],
-  ["Benda & Kehidupan", "毛布", "もうふ", "selimut"],
-  ["Benda & Kehidupan", "鏡", "かがみ", "cermin"],
-  ["Benda & Kehidupan", "道具", "どうぐ", "alat"],
-  ["Benda & Kehidupan", "機械", "きかい", "mesin"],
-  ["Benda & Kehidupan", "部品", "ぶひん", "suku cadang"],
-  ["Benda & Kehidupan", "材料", "ざいりょう", "bahan"],
-  ["Benda & Kehidupan", "品物", "しなもの", "barang"],
-  ["Benda & Kehidupan", "値段", "ねだん", "harga"],
-  ["Benda & Kehidupan", "お釣り", "おつり", "uang kembalian"],
-  ["Benda & Kehidupan", "売り場", "うりば", "tempat penjualan"],
-  ["Benda & Kehidupan", "会計", "かいけい", "kasir, pembayaran"],
-  ["Benda & Kehidupan", "包装", "ほうそう", "bungkus, kemasan"],
-
-  // === ORANG & MASYARAKAT ===
-  ["Orang & Masyarakat", "赤ちゃん", "あかちゃん", "bayi"],
-  ["Orang & Masyarakat", "息子", "むすこ", "anak laki-laki"],
-  ["Orang & Masyarakat", "娘", "むすめ", "anak perempuan"],
-  ["Orang & Masyarakat", "祖父", "そふ", "kakek sendiri"],
-  ["Orang & Masyarakat", "祖母", "そぼ", "nenek sendiri"],
-  ["Orang & Masyarakat", "ご主人", "ごしゅじん", "suami orang lain"],
-  ["Orang & Masyarakat", "奥さん", "おくさん", "istri orang lain"],
-  ["Orang & Masyarakat", "店員", "てんいん", "pegawai toko"],
-  ["Orang & Masyarakat", "係員", "かかりいん", "petugas"],
-  ["Orang & Masyarakat", "看護師", "かんごし", "perawat"],
-  ["Orang & Masyarakat", "警察", "けいさつ", "polisi"],
-  ["Orang & Masyarakat", "泥棒", "どろぼう", "pencuri"],
-  ["Orang & Masyarakat", "社長", "しゃちょう", "direktur perusahaan"],
-  ["Orang & Masyarakat", "部長", "ぶちょう", "kepala bagian"],
-  ["Orang & Masyarakat", "課長", "かちょう", "kepala seksi"],
-  ["Orang & Masyarakat", "先輩", "せんぱい", "senior"],
-  ["Orang & Masyarakat", "後輩", "こうはい", "junior"],
-  ["Orang & Masyarakat", "留学生", "りゅうがくせい", "pelajar asing"],
-  ["Orang & Masyarakat", "お客さん", "おきゃくさん", "tamu, pelanggan"],
-  ["Orang & Masyarakat", "場合", "ばあい", "keadaan, kasus"],
-
-  // === WAKTU & JUMLAH ===
-  ["Waktu & Jumlah", "間", "あいだ", "antara, selama"],
-  ["Waktu & Jumlah", "今度", "こんど", "kali ini, berikutnya"],
-  ["Waktu & Jumlah", "最近", "さいきん", "akhir-akhir ini"],
-  ["Waktu & Jumlah", "将来", "しょうらい", "masa depan"],
-  ["Waktu & Jumlah", "昔", "むかし", "dahulu"],
-  ["Waktu & Jumlah", "途中", "とちゅう", "di tengah jalan"],
-  ["Waktu & Jumlah", "予定", "よてい", "rencana"],
-  ["Waktu & Jumlah", "一度", "いちど", "sekali"],
-  ["Waktu & Jumlah", "何度", "なんど", "berapa kali"],
-  ["Waktu & Jumlah", "以内", "いない", "dalam, tidak lebih dari"],
-  ["Waktu & Jumlah", "以下", "いか", "di bawah, kurang dari"],
-  ["Waktu & Jumlah", "以上", "いじょう", "lebih dari, di atas"],
-  ["Waktu & Jumlah", "以外", "いがい", "selain"],
-  ["Waktu & Jumlah", "倍", "ばい", "kali lipat"],
-  ["Waktu & Jumlah", "億", "おく", "seratus juta"],
-  ["Waktu & Jumlah", "全部", "ぜんぶ", "semua"],
-  ["Waktu & Jumlah", "大部分", "だいぶぶん", "sebagian besar"],
-  ["Waktu & Jumlah", "十分", "じゅうぶん", "cukup"],
-  ["Waktu & Jumlah", "途中", "とちゅう", "di tengah proses"],
-  ["Waktu & Jumlah", "期間", "きかん", "periode"],
-
-  // === KATA SIFAT & KETERANGAN ===
-  ["Kata Sifat & Keterangan", "美しい", "うつくしい", "indah"],
-  ["Kata Sifat & Keterangan", "嬉しい", "うれしい", "senang"],
-  ["Kata Sifat & Keterangan", "悲しい", "かなしい", "sedih"],
-  ["Kata Sifat & Keterangan", "厳しい", "きびしい", "keras, ketat"],
-  ["Kata Sifat & Keterangan", "細かい", "こまかい", "kecil, rinci"],
-  ["Kata Sifat & Keterangan", "怖い", "こわい", "takut, menakutkan"],
-  ["Kata Sifat & Keterangan", "寂しい", "さびしい", "sepi, kesepian"],
-  ["Kata Sifat & Keterangan", "素晴らしい", "すばらしい", "hebat, luar biasa"],
-  ["Kata Sifat & Keterangan", "珍しい", "めずらしい", "jarang, unik"],
-  ["Kata Sifat & Keterangan", "柔らかい", "やわらかい", "lunak, lembut"],
-  ["Kata Sifat & Keterangan", "硬い", "かたい", "keras"],
-  ["Kata Sifat & Keterangan", "浅い", "あさい", "dangkal"],
-  ["Kata Sifat & Keterangan", "深い", "ふかい", "dalam"],
-  ["Kata Sifat & Keterangan", "苦い", "にがい", "pahit"],
-  ["Kata Sifat & Keterangan", "恥ずかしい", "はずかしい", "malu"],
-  ["Kata Sifat & Keterangan", "変", "へん", "aneh"],
-  ["Kata Sifat & Keterangan", "丁寧", "ていねい", "sopan, teliti"],
-  ["Kata Sifat & Keterangan", "親切", "しんせつ", "baik hati"],
-  ["Kata Sifat & Keterangan", "熱心", "ねっしん", "sungguh-sungguh"],
-  ["Kata Sifat & Keterangan", "複雑", "ふくざつ", "rumit"],
-  ["Kata Sifat & Keterangan", "簡単", "かんたん", "mudah"],
-  ["Kata Sifat & Keterangan", "急", "きゅう", "mendadak, cepat"],
-  ["Kata Sifat & Keterangan", "特別", "とくべつ", "khusus"],
-  ["Kata Sifat & Keterangan", "必要", "ひつよう", "perlu"],
-  ["Kata Sifat & Keterangan", "十分", "じゅうぶん", "cukup"],
-  ["Kata Sifat & Keterangan", "はっきり", "はっきり", "jelas"],
-  ["Kata Sifat & Keterangan", "すっかり", "すっかり", "sepenuhnya"],
-  ["Kata Sifat & Keterangan", "しっかり", "しっかり", "dengan kuat, sungguh-sungguh"],
-  ["Kata Sifat & Keterangan", "できるだけ", "できるだけ", "sebisa mungkin"],
-  ["Kata Sifat & Keterangan", "必ず", "かならず", "pasti"],
-
-  // === KATA KERJA ===
-  ["Kata Kerja", "上がる", "あがる", "naik"],
-  ["Kata Kerja", "集める", "あつめる", "mengumpulkan"],
-  ["Kata Kerja", "選ぶ", "えらぶ", "memilih"],
-  ["Kata Kerja", "折る", "おる", "melipat, mematahkan"],
-  ["Kata Kerja", "片付ける", "かたづける", "membereskan"],
-  ["Kata Kerja", "変える", "かえる", "mengubah"],
-  ["Kata Kerja", "変わる", "かわる", "berubah"],
-  ["Kata Kerja", "考える", "かんがえる", "memikirkan"],
-  ["Kata Kerja", "聞こえる", "きこえる", "terdengar"],
-  ["Kata Kerja", "決める", "きめる", "memutuskan"],
-  ["Kata Kerja", "決まる", "きまる", "diputuskan"],
-  ["Kata Kerja", "比べる", "くらべる", "membandingkan"],
-  ["Kata Kerja", "暮れる", "くれる", "menjadi gelap"],
-  ["Kata Kerja", "壊す", "こわす", "merusak"],
-  ["Kata Kerja", "壊れる", "こわれる", "rusak"],
-  ["Kata Kerja", "探す", "さがす", "mencari"],
-  ["Kata Kerja", "下がる", "さがる", "turun"],
-  ["Kata Kerja", "下げる", "さげる", "menurunkan"],
-  ["Kata Kerja", "触る", "さわる", "menyentuh"],
-  ["Kata Kerja", "調べる", "しらべる", "menyelidiki, memeriksa"],
-  ["Kata Kerja", "知らせる", "しらせる", "memberi tahu"],
-  ["Kata Kerja", "進む", "すすむ", "maju"],
-  ["Kata Kerja", "捨てる", "すてる", "membuang"],
-  ["Kata Kerja", "育てる", "そだてる", "membesarkan, merawat"],
-  ["Kata Kerja", "倒れる", "たおれる", "roboh, jatuh"],
-  ["Kata Kerja", "足す", "たす", "menambahkan"],
-  ["Kata Kerja", "足りる", "たりる", "cukup"],
-  ["Kata Kerja", "捕まえる", "つかまえる", "menangkap"],
-  ["Kata Kerja", "包む", "つつむ", "membungkus"],
-  ["Kata Kerja", "続く", "つづく", "berlanjut"],
-  ["Kata Kerja", "続ける", "つづける", "melanjutkan"],
-  ["Kata Kerja", "伝える", "つたえる", "menyampaikan"],
-  ["Kata Kerja", "手伝う", "てつだう", "membantu"],
-  ["Kata Kerja", "届ける", "とどける", "mengantarkan"],
-  ["Kata Kerja", "直す", "なおす", "memperbaiki"],
-  ["Kata Kerja", "直る", "なおる", "menjadi baik, sembuh"],
-  ["Kata Kerja", "慣れる", "なれる", "terbiasa"],
-  ["Kata Kerja", "逃げる", "にげる", "melarikan diri"],
-  ["Kata Kerja", "塗る", "ぬる", "mengoles, mengecat"],
-  ["Kata Kerja", "残る", "のこる", "tersisa"],
-  ["Kata Kerja", "乗り換える", "のりかえる", "pindah kendaraan"],
-  ["Kata Kerja", "運ぶ", "はこぶ", "mengangkut"],
-  ["Kata Kerja", "始める", "はじめる", "memulai"],
-  ["Kata Kerja", "払う", "はらう", "membayar"],
-  ["Kata Kerja", "冷える", "ひえる", "menjadi dingin"],
-  ["Kata Kerja", "増える", "ふえる", "bertambah"],
-  ["Kata Kerja", "太る", "ふとる", "menjadi gemuk"],
-  ["Kata Kerja", "褒める", "ほめる", "memuji"],
-  ["Kata Kerja", "間に合う", "まにあう", "sempat, tepat waktu"],
-  ["Kata Kerja", "見つかる", "みつかる", "ditemukan"],
-  ["Kata Kerja", "見つける", "みつける", "menemukan"],
-  ["Kata Kerja", "戻る", "もどる", "kembali"],
-  ["Kata Kerja", "焼く", "やく", "membakar, memanggang"],
-  ["Kata Kerja", "役に立つ", "やくにたつ", "berguna"],
-  ["Kata Kerja", "汚れる", "よごれる", "menjadi kotor"],
-  ["Kata Kerja", "沸かす", "わかす", "mendidihkan"],
-  ["Kata Kerja", "沸く", "わく", "mendidih"],
-  ["Kata Kerja", "別れる", "わかれる", "berpisah"],
-  ["Kata Kerja", "忘れ物", "わすれもの", "barang tertinggal"],
+// Kosakata N4 — dikurasi untuk TTS Belajar Wibu v0.6.0
+// Petunjuk kana disembunyikan sebelum benar; jawaban mengikuti hiragana/katakana standar.
+window.VOCABS = [
+  {
+    "question": "具合",
+    "reading": "ぐあい",
+    "meaning": "keadaan, kondisi",
+    "chapter": [
+      "N4",
+      "Pergaulan & Perasaan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "関係",
+    "reading": "かんけい",
+    "meaning": "hubungan",
+    "chapter": [
+      "N4",
+      "Pergaulan & Perasaan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "気分",
+    "reading": "きぶん",
+    "meaning": "perasaan, suasana, keadaan kesehatan",
+    "chapter": [
+      "N4",
+      "Pergaulan & Perasaan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "気持ち",
+    "reading": "きもち",
+    "meaning": "perasaan, suasana",
+    "chapter": [
+      "N4",
+      "Pergaulan & Perasaan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "おかげ",
+    "reading": "おかげ",
+    "meaning": "berkat, karena",
+    "chapter": [
+      "N4",
+      "Pergaulan & Perasaan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "お見舞い",
+    "reading": "おみまい",
+    "meaning": "kunjungan, menjenguk orang sakit",
+    "chapter": [
+      "N4",
+      "Pergaulan & Perasaan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "お土産",
+    "reading": "おみやげ",
+    "meaning": "oleh-oleh, suvenir",
+    "chapter": [
+      "N4",
+      "Pergaulan & Perasaan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "お礼",
+    "reading": "おれい",
+    "meaning": "ucapan atau tanda terima kasih",
+    "chapter": [
+      "N4",
+      "Pergaulan & Perasaan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "都合",
+    "reading": "つごう",
+    "meaning": "keadaan, urusan, kenyamanan waktu",
+    "chapter": [
+      "N4",
+      "Pergaulan & Perasaan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "案内",
+    "reading": "あんない",
+    "meaning": "panduan, informasi",
+    "chapter": [
+      "N4",
+      "Pergaulan & Perasaan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "安心",
+    "reading": "あんしん",
+    "meaning": "lega, tenang",
+    "chapter": [
+      "N4",
+      "Pergaulan & Perasaan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "安全",
+    "reading": "あんぜん",
+    "meaning": "aman, keselamatan",
+    "chapter": [
+      "N4",
+      "Pergaulan & Perasaan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "意見",
+    "reading": "いけん",
+    "meaning": "pendapat",
+    "chapter": [
+      "N4",
+      "Pergaulan & Perasaan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "嘘",
+    "reading": "うそ",
+    "meaning": "bohong",
+    "chapter": [
+      "N4",
+      "Pergaulan & Perasaan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "遠慮",
+    "reading": "えんりょ",
+    "meaning": "sungkan, menahan diri",
+    "chapter": [
+      "N4",
+      "Pergaulan & Perasaan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "お祝い",
+    "reading": "おいわい",
+    "meaning": "perayaan, ucapan selamat",
+    "chapter": [
+      "N4",
+      "Pergaulan & Perasaan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "贈り物",
+    "reading": "おくりもの",
+    "meaning": "hadiah",
+    "chapter": [
+      "N4",
+      "Pergaulan & Perasaan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "謝る",
+    "reading": "あやまる",
+    "meaning": "meminta maaf",
+    "chapter": [
+      "N4",
+      "Pergaulan & Perasaan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "喜ぶ",
+    "reading": "よろこぶ",
+    "meaning": "senang, gembira",
+    "chapter": [
+      "N4",
+      "Pergaulan & Perasaan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "泣く",
+    "reading": "なく",
+    "meaning": "menangis",
+    "chapter": [
+      "N4",
+      "Pergaulan & Perasaan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "笑う",
+    "reading": "わらう",
+    "meaning": "tertawa",
+    "chapter": [
+      "N4",
+      "Pergaulan & Perasaan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "怒る",
+    "reading": "おこる",
+    "meaning": "marah",
+    "chapter": [
+      "N4",
+      "Pergaulan & Perasaan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "困る",
+    "reading": "こまる",
+    "meaning": "kesulitan, bingung",
+    "chapter": [
+      "N4",
+      "Pergaulan & Perasaan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "美術館",
+    "reading": "びじゅつかん",
+    "meaning": "gedung kesenian, museum seni",
+    "chapter": [
+      "N4",
+      "Peta & Lokasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "地理",
+    "reading": "ちり",
+    "meaning": "ilmu bumi, geografi",
+    "chapter": [
+      "N4",
+      "Peta & Lokasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "駐車場",
+    "reading": "ちゅうしゃじょう",
+    "meaning": "tempat parkir",
+    "chapter": [
+      "N4",
+      "Peta & Lokasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "動物園",
+    "reading": "どうぶつえん",
+    "meaning": "kebun binatang",
+    "chapter": [
+      "N4",
+      "Peta & Lokasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "ガソリンスタンド",
+    "reading": "がそりんすたんど",
+    "meaning": "pompa bensin",
+    "chapter": [
+      "N4",
+      "Peta & Lokasi"
+    ],
+    "clueLabel": "Kata serapan"
+  },
+  {
+    "question": "飛行場",
+    "reading": "ひこうじょう",
+    "meaning": "bandara, lapangan terbang",
+    "chapter": [
+      "N4",
+      "Peta & Lokasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "海岸",
+    "reading": "かいがん",
+    "meaning": "pantai, tepi laut",
+    "chapter": [
+      "N4",
+      "Peta & Lokasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "会場",
+    "reading": "かいじょう",
+    "meaning": "ruang rapat, tempat pertemuan",
+    "chapter": [
+      "N4",
+      "Peta & Lokasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "近所",
+    "reading": "きんじょ",
+    "meaning": "daerah sekitar",
+    "chapter": [
+      "N4",
+      "Peta & Lokasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "郊外",
+    "reading": "こうがい",
+    "meaning": "luar kota",
+    "chapter": [
+      "N4",
+      "Peta & Lokasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "工場",
+    "reading": "こうじょう",
+    "meaning": "pabrik",
+    "chapter": [
+      "N4",
+      "Peta & Lokasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "講堂",
+    "reading": "こうどう",
+    "meaning": "aula",
+    "chapter": [
+      "N4",
+      "Peta & Lokasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "港",
+    "reading": "みなと",
+    "meaning": "pelabuhan",
+    "chapter": [
+      "N4",
+      "Peta & Lokasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "湖",
+    "reading": "みずうみ",
+    "meaning": "danau",
+    "chapter": [
+      "N4",
+      "Peta & Lokasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "寺",
+    "reading": "てら",
+    "meaning": "kuil Buddha",
+    "chapter": [
+      "N4",
+      "Peta & Lokasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "神社",
+    "reading": "じんじゃ",
+    "meaning": "kuil Shinto",
+    "chapter": [
+      "N4",
+      "Peta & Lokasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "坂",
+    "reading": "さか",
+    "meaning": "tanjakan, lereng",
+    "chapter": [
+      "N4",
+      "Peta & Lokasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "通り",
+    "reading": "とおり",
+    "meaning": "jalan, lalu lintas",
+    "chapter": [
+      "N4",
+      "Peta & Lokasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "場所代",
+    "reading": "ばしょだい",
+    "meaning": "biaya tempat",
+    "chapter": [
+      "N4",
+      "Peta & Lokasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "交通",
+    "reading": "こうつう",
+    "meaning": "lalu lintas, transportasi",
+    "chapter": [
+      "N4",
+      "Transportasi & Perjalanan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "特急",
+    "reading": "とっきゅう",
+    "meaning": "kereta ekspres khusus",
+    "chapter": [
+      "N4",
+      "Transportasi & Perjalanan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "急行",
+    "reading": "きゅうこう",
+    "meaning": "kereta ekspres",
+    "chapter": [
+      "N4",
+      "Transportasi & Perjalanan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "普通",
+    "reading": "ふつう",
+    "meaning": "biasa, lokal",
+    "chapter": [
+      "N4",
+      "Transportasi & Perjalanan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "汽車",
+    "reading": "きしゃ",
+    "meaning": "kereta api",
+    "chapter": [
+      "N4",
+      "Transportasi & Perjalanan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "船",
+    "reading": "ふね",
+    "meaning": "kapal",
+    "chapter": [
+      "N4",
+      "Transportasi & Perjalanan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "運転",
+    "reading": "うんてん",
+    "meaning": "mengemudi",
+    "chapter": [
+      "N4",
+      "Transportasi & Perjalanan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "運転手",
+    "reading": "うんてんしゅ",
+    "meaning": "sopir",
+    "chapter": [
+      "N4",
+      "Transportasi & Perjalanan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "乗り物",
+    "reading": "のりもの",
+    "meaning": "kendaraan",
+    "chapter": [
+      "N4",
+      "Transportasi & Perjalanan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "乗り換え",
+    "reading": "のりかえ",
+    "meaning": "pindah kendaraan",
+    "chapter": [
+      "N4",
+      "Transportasi & Perjalanan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "出発",
+    "reading": "しゅっぱつ",
+    "meaning": "keberangkatan",
+    "chapter": [
+      "N4",
+      "Transportasi & Perjalanan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "到着",
+    "reading": "とうちゃく",
+    "meaning": "kedatangan",
+    "chapter": [
+      "N4",
+      "Transportasi & Perjalanan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "旅行",
+    "reading": "りょこう",
+    "meaning": "perjalanan, wisata",
+    "chapter": [
+      "N4",
+      "Transportasi & Perjalanan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "旅館",
+    "reading": "りょかん",
+    "meaning": "penginapan Jepang",
+    "chapter": [
+      "N4",
+      "Transportasi & Perjalanan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "予約",
+    "reading": "よやく",
+    "meaning": "reservasi",
+    "chapter": [
+      "N4",
+      "Transportasi & Perjalanan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "見物",
+    "reading": "けんぶつ",
+    "meaning": "tamasya, melihat-lihat",
+    "chapter": [
+      "N4",
+      "Transportasi & Perjalanan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "見送り",
+    "reading": "みおくり",
+    "meaning": "mengantar keberangkatan",
+    "chapter": [
+      "N4",
+      "Transportasi & Perjalanan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "挨拶",
+    "reading": "あいさつ",
+    "meaning": "salam, sapaan",
+    "chapter": [
+      "N4",
+      "Kegiatan & Komunikasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "連絡",
+    "reading": "れんらく",
+    "meaning": "kontak, menghubungi",
+    "chapter": [
+      "N4",
+      "Kegiatan & Komunikasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "返事",
+    "reading": "へんじ",
+    "meaning": "jawaban, balasan",
+    "chapter": [
+      "N4",
+      "Kegiatan & Komunikasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "相談",
+    "reading": "そうだん",
+    "meaning": "konsultasi",
+    "chapter": [
+      "N4",
+      "Kegiatan & Komunikasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "説明",
+    "reading": "せつめい",
+    "meaning": "penjelasan",
+    "chapter": [
+      "N4",
+      "Kegiatan & Komunikasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "質問",
+    "reading": "しつもん",
+    "meaning": "pertanyaan",
+    "chapter": [
+      "N4",
+      "Kegiatan & Komunikasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "答え",
+    "reading": "こたえ",
+    "meaning": "jawaban",
+    "chapter": [
+      "N4",
+      "Kegiatan & Komunikasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "用意",
+    "reading": "ようい",
+    "meaning": "persiapan",
+    "chapter": [
+      "N4",
+      "Kegiatan & Komunikasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "準備",
+    "reading": "じゅんび",
+    "meaning": "persiapan",
+    "chapter": [
+      "N4",
+      "Kegiatan & Komunikasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "練習",
+    "reading": "れんしゅう",
+    "meaning": "latihan",
+    "chapter": [
+      "N4",
+      "Kegiatan & Komunikasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "予習",
+    "reading": "よしゅう",
+    "meaning": "persiapan pelajaran",
+    "chapter": [
+      "N4",
+      "Kegiatan & Komunikasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "復習",
+    "reading": "ふくしゅう",
+    "meaning": "ulangan, review pelajaran",
+    "chapter": [
+      "N4",
+      "Kegiatan & Komunikasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "研究",
+    "reading": "けんきゅう",
+    "meaning": "penelitian",
+    "chapter": [
+      "N4",
+      "Kegiatan & Komunikasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "発音",
+    "reading": "はつおん",
+    "meaning": "pelafalan",
+    "chapter": [
+      "N4",
+      "Kegiatan & Komunikasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "翻訳",
+    "reading": "ほんやく",
+    "meaning": "terjemahan",
+    "chapter": [
+      "N4",
+      "Kegiatan & Komunikasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "放送",
+    "reading": "ほうそう",
+    "meaning": "siaran",
+    "chapter": [
+      "N4",
+      "Kegiatan & Komunikasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "約束",
+    "reading": "やくそく",
+    "meaning": "janji",
+    "chapter": [
+      "N4",
+      "Kegiatan & Komunikasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "用事",
+    "reading": "ようじ",
+    "meaning": "urusan",
+    "chapter": [
+      "N4",
+      "Kegiatan & Komunikasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "会議",
+    "reading": "かいぎ",
+    "meaning": "rapat",
+    "chapter": [
+      "N4",
+      "Kegiatan & Komunikasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "会話",
+    "reading": "かいわ",
+    "meaning": "percakapan",
+    "chapter": [
+      "N4",
+      "Kegiatan & Komunikasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "紹介",
+    "reading": "しょうかい",
+    "meaning": "perkenalan, pengenalan",
+    "chapter": [
+      "N4",
+      "Kegiatan & Komunikasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "招待",
+    "reading": "しょうたい",
+    "meaning": "undangan",
+    "chapter": [
+      "N4",
+      "Kegiatan & Komunikasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "注意",
+    "reading": "ちゅうい",
+    "meaning": "perhatian, peringatan",
+    "chapter": [
+      "N4",
+      "Kegiatan & Komunikasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "連れて行く",
+    "reading": "つれていく",
+    "meaning": "membawa pergi",
+    "chapter": [
+      "N4",
+      "Kegiatan & Komunikasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "手伝う",
+    "reading": "てつだう",
+    "meaning": "membantu",
+    "chapter": [
+      "N4",
+      "Kegiatan & Komunikasi"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "石",
+    "reading": "いし",
+    "meaning": "batu",
+    "chapter": [
+      "N4",
+      "Benda & Kehidupan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "枝",
+    "reading": "えだ",
+    "meaning": "ranting",
+    "chapter": [
+      "N4",
+      "Benda & Kehidupan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "草",
+    "reading": "くさ",
+    "meaning": "rumput",
+    "chapter": [
+      "N4",
+      "Benda & Kehidupan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "星",
+    "reading": "ほし",
+    "meaning": "bintang",
+    "chapter": [
+      "N4",
+      "Benda & Kehidupan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "雲",
+    "reading": "くも",
+    "meaning": "awan",
+    "chapter": [
+      "N4",
+      "Benda & Kehidupan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "光",
+    "reading": "ひかり",
+    "meaning": "cahaya",
+    "chapter": [
+      "N4",
+      "Benda & Kehidupan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "音",
+    "reading": "おと",
+    "meaning": "bunyi, suara",
+    "chapter": [
+      "N4",
+      "Benda & Kehidupan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "線",
+    "reading": "せん",
+    "meaning": "garis",
+    "chapter": [
+      "N4",
+      "Benda & Kehidupan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "表",
+    "reading": "おもて",
+    "meaning": "depan, permukaan",
+    "chapter": [
+      "N4",
+      "Benda & Kehidupan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "裏",
+    "reading": "うら",
+    "meaning": "belakang, sisi balik",
+    "chapter": [
+      "N4",
+      "Benda & Kehidupan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "袋",
+    "reading": "ふくろ",
+    "meaning": "kantong, tas",
+    "chapter": [
+      "N4",
+      "Benda & Kehidupan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "指輪",
+    "reading": "ゆびわ",
+    "meaning": "cincin",
+    "chapter": [
+      "N4",
+      "Benda & Kehidupan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "人形",
+    "reading": "にんぎょう",
+    "meaning": "boneka",
+    "chapter": [
+      "N4",
+      "Benda & Kehidupan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "棚",
+    "reading": "たな",
+    "meaning": "rak",
+    "chapter": [
+      "N4",
+      "Benda & Kehidupan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "畳",
+    "reading": "たたみ",
+    "meaning": "tatami",
+    "chapter": [
+      "N4",
+      "Benda & Kehidupan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "毛布",
+    "reading": "もうふ",
+    "meaning": "selimut",
+    "chapter": [
+      "N4",
+      "Benda & Kehidupan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "鏡",
+    "reading": "かがみ",
+    "meaning": "cermin",
+    "chapter": [
+      "N4",
+      "Benda & Kehidupan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "道具",
+    "reading": "どうぐ",
+    "meaning": "alat",
+    "chapter": [
+      "N4",
+      "Benda & Kehidupan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "機械",
+    "reading": "きかい",
+    "meaning": "mesin",
+    "chapter": [
+      "N4",
+      "Benda & Kehidupan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "部品",
+    "reading": "ぶひん",
+    "meaning": "suku cadang",
+    "chapter": [
+      "N4",
+      "Benda & Kehidupan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "材料",
+    "reading": "ざいりょう",
+    "meaning": "bahan",
+    "chapter": [
+      "N4",
+      "Benda & Kehidupan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "品物",
+    "reading": "しなもの",
+    "meaning": "barang",
+    "chapter": [
+      "N4",
+      "Benda & Kehidupan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "値段",
+    "reading": "ねだん",
+    "meaning": "harga",
+    "chapter": [
+      "N4",
+      "Benda & Kehidupan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "お釣り",
+    "reading": "おつり",
+    "meaning": "uang kembalian",
+    "chapter": [
+      "N4",
+      "Benda & Kehidupan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "売り場",
+    "reading": "うりば",
+    "meaning": "tempat penjualan",
+    "chapter": [
+      "N4",
+      "Benda & Kehidupan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "会計",
+    "reading": "かいけい",
+    "meaning": "kasir, pembayaran",
+    "chapter": [
+      "N4",
+      "Benda & Kehidupan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "包装",
+    "reading": "ほうそう",
+    "meaning": "bungkus, kemasan",
+    "chapter": [
+      "N4",
+      "Benda & Kehidupan"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "赤ちゃん",
+    "reading": "あかちゃん",
+    "meaning": "bayi",
+    "chapter": [
+      "N4",
+      "Orang & Masyarakat"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "息子",
+    "reading": "むすこ",
+    "meaning": "anak laki-laki",
+    "chapter": [
+      "N4",
+      "Orang & Masyarakat"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "娘",
+    "reading": "むすめ",
+    "meaning": "anak perempuan",
+    "chapter": [
+      "N4",
+      "Orang & Masyarakat"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "祖父",
+    "reading": "そふ",
+    "meaning": "kakek sendiri",
+    "chapter": [
+      "N4",
+      "Orang & Masyarakat"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "祖母",
+    "reading": "そぼ",
+    "meaning": "nenek sendiri",
+    "chapter": [
+      "N4",
+      "Orang & Masyarakat"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "ご主人",
+    "reading": "ごしゅじん",
+    "meaning": "suami orang lain",
+    "chapter": [
+      "N4",
+      "Orang & Masyarakat"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "係員",
+    "reading": "かかりいん",
+    "meaning": "petugas",
+    "chapter": [
+      "N4",
+      "Orang & Masyarakat"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "看護師",
+    "reading": "かんごし",
+    "meaning": "perawat",
+    "chapter": [
+      "N4",
+      "Orang & Masyarakat"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "警察",
+    "reading": "けいさつ",
+    "meaning": "polisi",
+    "chapter": [
+      "N4",
+      "Orang & Masyarakat"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "泥棒",
+    "reading": "どろぼう",
+    "meaning": "pencuri",
+    "chapter": [
+      "N4",
+      "Orang & Masyarakat"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "社長",
+    "reading": "しゃちょう",
+    "meaning": "direktur perusahaan",
+    "chapter": [
+      "N4",
+      "Orang & Masyarakat"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "部長",
+    "reading": "ぶちょう",
+    "meaning": "kepala bagian",
+    "chapter": [
+      "N4",
+      "Orang & Masyarakat"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "課長",
+    "reading": "かちょう",
+    "meaning": "kepala seksi",
+    "chapter": [
+      "N4",
+      "Orang & Masyarakat"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "先輩",
+    "reading": "せんぱい",
+    "meaning": "senior",
+    "chapter": [
+      "N4",
+      "Orang & Masyarakat"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "後輩",
+    "reading": "こうはい",
+    "meaning": "junior",
+    "chapter": [
+      "N4",
+      "Orang & Masyarakat"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "お客さん",
+    "reading": "おきゃくさん",
+    "meaning": "tamu, pelanggan",
+    "chapter": [
+      "N4",
+      "Orang & Masyarakat"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "場合",
+    "reading": "ばあい",
+    "meaning": "keadaan, kasus",
+    "chapter": [
+      "N4",
+      "Orang & Masyarakat"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "今度",
+    "reading": "こんど",
+    "meaning": "kali ini, berikutnya",
+    "chapter": [
+      "N4",
+      "Waktu & Jumlah"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "最近",
+    "reading": "さいきん",
+    "meaning": "akhir-akhir ini",
+    "chapter": [
+      "N4",
+      "Waktu & Jumlah"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "将来",
+    "reading": "しょうらい",
+    "meaning": "masa depan",
+    "chapter": [
+      "N4",
+      "Waktu & Jumlah"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "昔",
+    "reading": "むかし",
+    "meaning": "dahulu",
+    "chapter": [
+      "N4",
+      "Waktu & Jumlah"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "途中",
+    "reading": "とちゅう",
+    "meaning": "di tengah jalan",
+    "chapter": [
+      "N4",
+      "Waktu & Jumlah"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "予定",
+    "reading": "よてい",
+    "meaning": "rencana",
+    "chapter": [
+      "N4",
+      "Waktu & Jumlah"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "一度",
+    "reading": "いちど",
+    "meaning": "sekali",
+    "chapter": [
+      "N4",
+      "Waktu & Jumlah"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "何度",
+    "reading": "なんど",
+    "meaning": "berapa kali",
+    "chapter": [
+      "N4",
+      "Waktu & Jumlah"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "以内",
+    "reading": "いない",
+    "meaning": "dalam, tidak lebih dari",
+    "chapter": [
+      "N4",
+      "Waktu & Jumlah"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "以下",
+    "reading": "いか",
+    "meaning": "di bawah, kurang dari",
+    "chapter": [
+      "N4",
+      "Waktu & Jumlah"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "以上",
+    "reading": "いじょう",
+    "meaning": "lebih dari, di atas",
+    "chapter": [
+      "N4",
+      "Waktu & Jumlah"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "以外",
+    "reading": "いがい",
+    "meaning": "selain",
+    "chapter": [
+      "N4",
+      "Waktu & Jumlah"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "倍",
+    "reading": "ばい",
+    "meaning": "kali lipat",
+    "chapter": [
+      "N4",
+      "Waktu & Jumlah"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "億",
+    "reading": "おく",
+    "meaning": "seratus juta",
+    "chapter": [
+      "N4",
+      "Waktu & Jumlah"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "全部",
+    "reading": "ぜんぶ",
+    "meaning": "semua",
+    "chapter": [
+      "N4",
+      "Waktu & Jumlah"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "大部分",
+    "reading": "だいぶぶん",
+    "meaning": "sebagian besar",
+    "chapter": [
+      "N4",
+      "Waktu & Jumlah"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "十分",
+    "reading": "じゅうぶん",
+    "meaning": "cukup",
+    "chapter": [
+      "N4",
+      "Waktu & Jumlah"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "期間",
+    "reading": "きかん",
+    "meaning": "periode",
+    "chapter": [
+      "N4",
+      "Waktu & Jumlah"
+    ],
+    "clueLabel": "Kosakata"
+  },
+  {
+    "question": "美しい",
+    "reading": "うつくしい",
+    "meaning": "indah",
+    "chapter": [
+      "N4",
+      "Kata Sifat & Keterangan"
+    ],
+    "clueLabel": "Kata sifat"
+  },
+  {
+    "question": "嬉しい",
+    "reading": "うれしい",
+    "meaning": "senang",
+    "chapter": [
+      "N4",
+      "Kata Sifat & Keterangan"
+    ],
+    "clueLabel": "Kata sifat"
+  },
+  {
+    "question": "悲しい",
+    "reading": "かなしい",
+    "meaning": "sedih",
+    "chapter": [
+      "N4",
+      "Kata Sifat & Keterangan"
+    ],
+    "clueLabel": "Kata sifat"
+  },
+  {
+    "question": "厳しい",
+    "reading": "きびしい",
+    "meaning": "keras, ketat",
+    "chapter": [
+      "N4",
+      "Kata Sifat & Keterangan"
+    ],
+    "clueLabel": "Kata sifat"
+  },
+  {
+    "question": "細かい",
+    "reading": "こまかい",
+    "meaning": "kecil, rinci",
+    "chapter": [
+      "N4",
+      "Kata Sifat & Keterangan"
+    ],
+    "clueLabel": "Kata sifat"
+  },
+  {
+    "question": "怖い",
+    "reading": "こわい",
+    "meaning": "takut, menakutkan",
+    "chapter": [
+      "N4",
+      "Kata Sifat & Keterangan"
+    ],
+    "clueLabel": "Kata sifat"
+  },
+  {
+    "question": "寂しい",
+    "reading": "さびしい",
+    "meaning": "sepi, kesepian",
+    "chapter": [
+      "N4",
+      "Kata Sifat & Keterangan"
+    ],
+    "clueLabel": "Kata sifat"
+  },
+  {
+    "question": "素晴らしい",
+    "reading": "すばらしい",
+    "meaning": "hebat, luar biasa",
+    "chapter": [
+      "N4",
+      "Kata Sifat & Keterangan"
+    ],
+    "clueLabel": "Kata sifat"
+  },
+  {
+    "question": "珍しい",
+    "reading": "めずらしい",
+    "meaning": "jarang, unik",
+    "chapter": [
+      "N4",
+      "Kata Sifat & Keterangan"
+    ],
+    "clueLabel": "Kata sifat"
+  },
+  {
+    "question": "柔らかい",
+    "reading": "やわらかい",
+    "meaning": "lunak, lembut",
+    "chapter": [
+      "N4",
+      "Kata Sifat & Keterangan"
+    ],
+    "clueLabel": "Kata sifat"
+  },
+  {
+    "question": "硬い",
+    "reading": "かたい",
+    "meaning": "keras",
+    "chapter": [
+      "N4",
+      "Kata Sifat & Keterangan"
+    ],
+    "clueLabel": "Kata sifat"
+  },
+  {
+    "question": "浅い",
+    "reading": "あさい",
+    "meaning": "dangkal",
+    "chapter": [
+      "N4",
+      "Kata Sifat & Keterangan"
+    ],
+    "clueLabel": "Kata sifat"
+  },
+  {
+    "question": "深い",
+    "reading": "ふかい",
+    "meaning": "dalam",
+    "chapter": [
+      "N4",
+      "Kata Sifat & Keterangan"
+    ],
+    "clueLabel": "Kata sifat"
+  },
+  {
+    "question": "苦い",
+    "reading": "にがい",
+    "meaning": "pahit",
+    "chapter": [
+      "N4",
+      "Kata Sifat & Keterangan"
+    ],
+    "clueLabel": "Kata sifat"
+  },
+  {
+    "question": "恥ずかしい",
+    "reading": "はずかしい",
+    "meaning": "malu",
+    "chapter": [
+      "N4",
+      "Kata Sifat & Keterangan"
+    ],
+    "clueLabel": "Kata sifat"
+  },
+  {
+    "question": "変",
+    "reading": "へん",
+    "meaning": "aneh",
+    "chapter": [
+      "N4",
+      "Kata Sifat & Keterangan"
+    ],
+    "clueLabel": "Kata sifat"
+  },
+  {
+    "question": "丁寧",
+    "reading": "ていねい",
+    "meaning": "sopan, teliti",
+    "chapter": [
+      "N4",
+      "Kata Sifat & Keterangan"
+    ],
+    "clueLabel": "Kata sifat"
+  },
+  {
+    "question": "熱心",
+    "reading": "ねっしん",
+    "meaning": "sungguh-sungguh",
+    "chapter": [
+      "N4",
+      "Kata Sifat & Keterangan"
+    ],
+    "clueLabel": "Kata sifat"
+  },
+  {
+    "question": "複雑",
+    "reading": "ふくざつ",
+    "meaning": "rumit",
+    "chapter": [
+      "N4",
+      "Kata Sifat & Keterangan"
+    ],
+    "clueLabel": "Kata sifat"
+  },
+  {
+    "question": "急",
+    "reading": "きゅう",
+    "meaning": "mendadak, cepat",
+    "chapter": [
+      "N4",
+      "Kata Sifat & Keterangan"
+    ],
+    "clueLabel": "Kata sifat"
+  },
+  {
+    "question": "特別",
+    "reading": "とくべつ",
+    "meaning": "khusus",
+    "chapter": [
+      "N4",
+      "Kata Sifat & Keterangan"
+    ],
+    "clueLabel": "Kata sifat"
+  },
+  {
+    "question": "必要",
+    "reading": "ひつよう",
+    "meaning": "perlu",
+    "chapter": [
+      "N4",
+      "Kata Sifat & Keterangan"
+    ],
+    "clueLabel": "Kata sifat"
+  },
+  {
+    "question": "はっきり",
+    "reading": "はっきり",
+    "meaning": "jelas",
+    "chapter": [
+      "N4",
+      "Kata Sifat & Keterangan"
+    ],
+    "clueLabel": "Kata sifat"
+  },
+  {
+    "question": "すっかり",
+    "reading": "すっかり",
+    "meaning": "sepenuhnya",
+    "chapter": [
+      "N4",
+      "Kata Sifat & Keterangan"
+    ],
+    "clueLabel": "Kata sifat"
+  },
+  {
+    "question": "しっかり",
+    "reading": "しっかり",
+    "meaning": "dengan kuat, sungguh-sungguh",
+    "chapter": [
+      "N4",
+      "Kata Sifat & Keterangan"
+    ],
+    "clueLabel": "Kata sifat"
+  },
+  {
+    "question": "できるだけ",
+    "reading": "できるだけ",
+    "meaning": "sebisa mungkin",
+    "chapter": [
+      "N4",
+      "Kata Sifat & Keterangan"
+    ],
+    "clueLabel": "Kata sifat"
+  },
+  {
+    "question": "必ず",
+    "reading": "かならず",
+    "meaning": "pasti",
+    "chapter": [
+      "N4",
+      "Kata Sifat & Keterangan"
+    ],
+    "clueLabel": "Kata sifat"
+  },
+  {
+    "question": "上がる",
+    "reading": "あがる",
+    "meaning": "naik",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "集める",
+    "reading": "あつめる",
+    "meaning": "mengumpulkan",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "選ぶ",
+    "reading": "えらぶ",
+    "meaning": "memilih",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "折る",
+    "reading": "おる",
+    "meaning": "melipat, mematahkan",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "片付ける",
+    "reading": "かたづける",
+    "meaning": "membereskan",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "変える",
+    "reading": "かえる",
+    "meaning": "mengubah",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "変わる",
+    "reading": "かわる",
+    "meaning": "berubah",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "考える",
+    "reading": "かんがえる",
+    "meaning": "memikirkan",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "聞こえる",
+    "reading": "きこえる",
+    "meaning": "terdengar",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "決める",
+    "reading": "きめる",
+    "meaning": "memutuskan",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "決まる",
+    "reading": "きまる",
+    "meaning": "diputuskan",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "比べる",
+    "reading": "くらべる",
+    "meaning": "membandingkan",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "暮れる",
+    "reading": "くれる",
+    "meaning": "menjadi gelap",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "壊す",
+    "reading": "こわす",
+    "meaning": "merusak",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "壊れる",
+    "reading": "こわれる",
+    "meaning": "rusak",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "探す",
+    "reading": "さがす",
+    "meaning": "mencari",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "下がる",
+    "reading": "さがる",
+    "meaning": "turun",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "下げる",
+    "reading": "さげる",
+    "meaning": "menurunkan",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "触る",
+    "reading": "さわる",
+    "meaning": "menyentuh",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "調べる",
+    "reading": "しらべる",
+    "meaning": "menyelidiki, memeriksa",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "知らせる",
+    "reading": "しらせる",
+    "meaning": "memberi tahu",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "進む",
+    "reading": "すすむ",
+    "meaning": "maju",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "捨てる",
+    "reading": "すてる",
+    "meaning": "membuang",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "育てる",
+    "reading": "そだてる",
+    "meaning": "membesarkan, merawat",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "倒れる",
+    "reading": "たおれる",
+    "meaning": "roboh, jatuh",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "足す",
+    "reading": "たす",
+    "meaning": "menambahkan",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "足りる",
+    "reading": "たりる",
+    "meaning": "cukup",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "捕まえる",
+    "reading": "つかまえる",
+    "meaning": "menangkap",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "包む",
+    "reading": "つつむ",
+    "meaning": "membungkus",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "続く",
+    "reading": "つづく",
+    "meaning": "berlanjut",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "続ける",
+    "reading": "つづける",
+    "meaning": "melanjutkan",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "伝える",
+    "reading": "つたえる",
+    "meaning": "menyampaikan",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "届ける",
+    "reading": "とどける",
+    "meaning": "mengantarkan",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "直す",
+    "reading": "なおす",
+    "meaning": "memperbaiki",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "直る",
+    "reading": "なおる",
+    "meaning": "menjadi baik, sembuh",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "慣れる",
+    "reading": "なれる",
+    "meaning": "terbiasa",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "逃げる",
+    "reading": "にげる",
+    "meaning": "melarikan diri",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "塗る",
+    "reading": "ぬる",
+    "meaning": "mengoles, mengecat",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "残る",
+    "reading": "のこる",
+    "meaning": "tersisa",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "乗り換える",
+    "reading": "のりかえる",
+    "meaning": "pindah kendaraan",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "運ぶ",
+    "reading": "はこぶ",
+    "meaning": "mengangkut",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "始める",
+    "reading": "はじめる",
+    "meaning": "memulai",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "払う",
+    "reading": "はらう",
+    "meaning": "membayar",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "冷える",
+    "reading": "ひえる",
+    "meaning": "menjadi dingin",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "増える",
+    "reading": "ふえる",
+    "meaning": "bertambah",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "太る",
+    "reading": "ふとる",
+    "meaning": "menjadi gemuk",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "褒める",
+    "reading": "ほめる",
+    "meaning": "memuji",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "間に合う",
+    "reading": "まにあう",
+    "meaning": "sempat, tepat waktu",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "見つかる",
+    "reading": "みつかる",
+    "meaning": "ditemukan",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "見つける",
+    "reading": "みつける",
+    "meaning": "menemukan",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "戻る",
+    "reading": "もどる",
+    "meaning": "kembali",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "焼く",
+    "reading": "やく",
+    "meaning": "membakar, memanggang",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "役に立つ",
+    "reading": "やくにたつ",
+    "meaning": "berguna",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "汚れる",
+    "reading": "よごれる",
+    "meaning": "menjadi kotor",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "沸かす",
+    "reading": "わかす",
+    "meaning": "mendidihkan",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "沸く",
+    "reading": "わく",
+    "meaning": "mendidih",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "別れる",
+    "reading": "わかれる",
+    "meaning": "berpisah",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  },
+  {
+    "question": "忘れ物",
+    "reading": "わすれもの",
+    "meaning": "barang tertinggal",
+    "chapter": [
+      "N4",
+      "Kata Kerja"
+    ],
+    "clueLabel": "Kata kerja"
+  }
 ];
-
-window.VOCABS = N4_VOCAB_ROWS.map(([group, question, reading, meaning]) => ({
-  question,
-  reading,
-  meaning,
-  chapter: ["N4", group],
-}));
