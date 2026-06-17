@@ -11,6 +11,7 @@
       return scripts[scripts.length - 1];
     })();
 
+  var trackerVersion = "0.3.0";
   var scriptUrl = script && script.src ? script.src : window.location.href;
   var endpoint =
     (script && script.dataset.endpoint) ||
@@ -231,6 +232,7 @@
 
   var currentVisitorId = visitorId();
   var currentSessionId = sessionId();
+  var currentInternalToken = getCookie("bwt_internal_token") || storageGet("bwt_internal_token") || "";
   var attr = attribution();
 
   function basePayload() {
@@ -258,6 +260,9 @@
       landingUrl: attr.first.landingUrl || safePageUrl(),
       firstReferrer: attr.first.firstReferrer || "",
       timestamp: new Date().toISOString(),
+      trackerVersion: trackerVersion,
+      internalToken: clean(currentInternalToken, 160),
+      sourceOrigin: window.location.origin || "",
     };
   }
 
@@ -682,7 +687,7 @@
 
   function exposeApi() {
     window.BWTracker = {
-      version: "0.2.4",
+      version: trackerVersion,
       pageKey: pageKey,
       productKey: productKey,
       track: send,
@@ -712,6 +717,9 @@
       },
       attribution: function () {
         return attr;
+      },
+      isInternal: function () {
+        return !!currentInternalToken;
       },
       flush: flushQueue,
     };
