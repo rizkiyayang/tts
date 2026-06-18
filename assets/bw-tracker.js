@@ -11,7 +11,7 @@
       return scripts[scripts.length - 1];
     })();
 
-  var trackerVersion = "0.3.1";
+  var trackerVersion = "0.3.2";
   var scriptUrl = script && script.src ? script.src : window.location.href;
   var endpoint =
     (script && script.dataset.endpoint) ||
@@ -238,6 +238,10 @@
 
   var currentVisitorId = visitorId();
   var currentSessionId = sessionId();
+  var previousCountedSession = getCookie("bwt_last_counted_session") || storageGet("bwt_last_counted_session") || "";
+  var currentVisitorState = previousCountedSession && previousCountedSession !== currentSessionId ? "returning" : "new";
+  storageSet("bwt_last_counted_session", currentSessionId);
+  setCookie("bwt_last_counted_session", currentSessionId, 365 * 24 * 60 * 60);
   var currentInternalToken = getCookie("bwt_internal_token") || storageGet("bwt_internal_token") || "";
   var currentInternalValid = false;
   var attr = attribution();
@@ -269,6 +273,9 @@
       timestamp: new Date().toISOString(),
       trackerVersion: trackerVersion,
       internalToken: clean(currentInternalToken, 160),
+      visitorState: currentVisitorState,
+      screenWidth: Math.max(0, Number(window.screen && window.screen.width ? window.screen.width : window.innerWidth || 0)),
+      screenHeight: Math.max(0, Number(window.screen && window.screen.height ? window.screen.height : window.innerHeight || 0)),
       sourceOrigin: window.location.origin || "",
     };
   }
@@ -671,6 +678,7 @@
     function check() {
       ticking = false;
       var percent = scrollPercent();
+      maxScrollSeen = Math.max(maxScrollSeen, percent);
       milestones.forEach(function (milestone) {
         if (percent >= milestone && !scrollSent[milestone]) {
           scrollSent[milestone] = true;
@@ -692,6 +700,86 @@
   }
 
 
+
+  var maxScrollSeen = 0;
+  var activeSeconds = 0;
+  var lastActivityAt = Date.now();
+  var lastEngagementSent = 0;
+  var errorCount = 0;
+
+  function markActivity() { lastActivityAt = Date.now(); }
+
+  function installActiveEngagement() {
+    ["pointerdown", "keydown", "touchstart", "scroll"].forEach(function (name) {
+      window.addEventListener(name, markActivity, { passive: true });
+    });
+    window.setInterval(function () {
+      if (document.visibilityState === "visible" && Date.now() - lastActivityAt <= 30000) {
+        activeSeconds += 1;
+        if (activeSeconds - lastEngagementSent >= 30) sendEngagement(false);
+      }
+    }, 1000);
+    document.addEventListener("visibilitychange", function () {
+      if (document.visibilityState === "hidden") sendEngagement(true);
+      else markActivity();
+    });
+    window.addEventListener("pagehide", function () { sendEngagement(true); });
+  }
+
+  function sendEngagement(force) {
+    if (activeSeconds < 3 || (!force && activeSeconds - lastEngagementSent < 30)) return;
+    lastEngagementSent = activeSeconds;
+    send("engagement_summary", {
+      label: "Engagement aktif",
+      activeSeconds: activeSeconds,
+      maxScroll: maxScrollSeen,
+    });
+  }
+
+  function installErrorTracking() {
+    window.addEventListener("error", function (event) {
+      if (errorCount >= 5) return;
+      var target = event.target;
+      if (target && target !== window && target.tagName) {
+        errorCount += 1;
+        var source = safeUrlValue(target.src || target.href || "");
+        send("resource_error", {
+          label: "Aset gagal dimuat",
+          errorCode: "resource_load_failed",
+          errorMessage: clean(target.tagName + " gagal dimuat", 180),
+          errorFile: source,
+          resourceType: clean(target.tagName, 40),
+        });
+        return;
+      }
+      if (!event.message || errorCount >= 5) return;
+      errorCount += 1;
+      send("frontend_error", {
+        label: "Error JavaScript",
+        errorCode: "javascript_error",
+        errorMessage: clean(event.message, 220),
+        errorFile: safeUrlValue(event.filename || ""),
+        errorLine: Number(event.lineno || 0),
+      });
+    }, true);
+    window.addEventListener("unhandledrejection", function (event) {
+      if (errorCount >= 5) return;
+      errorCount += 1;
+      var reason = event && event.reason;
+      send("frontend_error", {
+        label: "Promise gagal",
+        errorCode: "unhandled_rejection",
+        errorMessage: clean(reason && reason.message ? reason.message : String(reason || "Promise rejected"), 220),
+      });
+    });
+  }
+
+  function trackAccessOpened() {
+    var host = String(window.location.hostname || "").toLowerCase();
+    if (host === "member.belajarwibu.com" || /^member_/.test(pageKey)) {
+      send("access_opened", { label: "Akses produk dibuka", productKey: detectProductKey() || productKey });
+    }
+  }
 
   function installTransactionFetchBridge() {
     if (window.__BWT_TRANSACTION_FETCH_BRIDGE__ || typeof window.fetch !== "function") return;
@@ -836,6 +924,9 @@
       bindForms();
       bindScroll();
       bindCheckoutDetails();
+      installActiveEngagement();
+      installErrorTracking();
+      trackAccessOpened();
       flushQueue();
       send("page_view", { label: document.title || "Page view" });
     });
