@@ -11,11 +11,13 @@
       return scripts[scripts.length - 1];
     })();
 
-  var trackerVersion = "0.3.0";
+  var trackerVersion = "0.3.1";
   var scriptUrl = script && script.src ? script.src : window.location.href;
   var endpoint =
     (script && script.dataset.endpoint) ||
     new URL("/wp-json/bwt/v1/track", scriptUrl).toString();
+  var configEndpoint = endpoint.replace(/\/track(?:\?.*)?$/, "/config");
+  var deviceStatusEndpoint = endpoint.replace(/\/track(?:\?.*)?$/, "/device-status");
   var pageKey =
     (script && script.dataset.pageKey) ||
     (document.body && (document.body.dataset.bwtPage || document.body.dataset.bwtxPage)) ||
@@ -68,7 +70,11 @@
   }
 
   var productKey = detectProductKey();
-  var cookieDomain = script && script.dataset.cookieDomain ? script.dataset.cookieDomain : "";
+  var host = String(window.location.hostname || "").toLowerCase();
+  var inferredCookieDomain = host === "belajarwibu.com" || /\.belajarwibu\.com$/.test(host)
+    ? ".belajarwibu.com"
+    : "";
+  var cookieDomain = script && script.dataset.cookieDomain ? script.dataset.cookieDomain : inferredCookieDomain;
   var metaMode = script && script.dataset.metaMode ? script.dataset.metaMode : "off";
   var metaPixelId = script && script.dataset.metaPixelId ? script.dataset.metaPixelId : "";
   var metaPageView = !!(script && script.dataset.metaPageView === "1");
@@ -233,6 +239,7 @@
   var currentVisitorId = visitorId();
   var currentSessionId = sessionId();
   var currentInternalToken = getCookie("bwt_internal_token") || storageGet("bwt_internal_token") || "";
+  var currentInternalValid = false;
   var attr = attribution();
 
   function basePayload() {
@@ -266,12 +273,22 @@
     };
   }
 
+  function storageRemove(key) {
+    try {
+      window.localStorage.removeItem(key);
+    } catch (error) {}
+  }
+
   function queueRead() {
     var raw = storageGet(queueKey);
     if (!raw) return [];
     try {
       var items = JSON.parse(raw);
-      return Array.isArray(items) ? items.slice(-50) : [];
+      if (!Array.isArray(items)) return [];
+      return items.slice(-50).map(function (item) {
+        if (item && item.payload) return item;
+        return { payload: item || {}, attempts: 0, nextAttemptAt: 0 };
+      });
     } catch (error) {
       return [];
     }
@@ -281,18 +298,41 @@
     storageSet(queueKey, JSON.stringify((items || []).slice(-50)));
   }
 
-  function queueAdd(payload) {
-    var items = queueRead();
-    items.push(payload);
-    queueWrite(items);
+  function retryDelay(attempts, status) {
+    if (status === 429) return Math.min(10 * 60 * 1000, 60000 * Math.max(1, attempts));
+    return Math.min(10 * 60 * 1000, Math.pow(2, Math.min(8, Math.max(1, attempts))) * 1000);
   }
 
-  function request(payload) {
-    return fetch(endpoint, {
-      method: "POST",
+  function isPermanentStatus(status) {
+    return status === 400 || status === 401 || status === 403 || status === 413 || status === 422;
+  }
+
+  function queueAdd(payload, error) {
+    var status = error && error.status ? Number(error.status) : 0;
+    if (isPermanentStatus(status)) {
+      deadLetterAdd(payload, "HTTP " + status);
+      return;
+    }
+    var items = queueRead();
+    var exists = items.some(function (item) {
+      return item && item.payload && item.payload.eventId === payload.eventId;
+    });
+    if (exists) return;
+    items.push({
+      payload: payload,
+      attempts: 1,
+      nextAttemptAt: Date.now() + retryDelay(1, status),
+    });
+    queueWrite(items);
+    scheduleFlush();
+  }
+
+  function request(payload, url, method) {
+    return fetch(url || endpoint, {
+      method: method || "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
-      keepalive: true,
+      body: method === "GET" ? undefined : JSON.stringify(payload || {}),
+      keepalive: (url || endpoint) === endpoint,
       credentials: "omit",
     }).then(function (response) {
       return response.json().catch(function () { return {}; }).then(function (data) {
@@ -328,61 +368,123 @@
     storageSet(deadLetterKey, JSON.stringify(items.slice(-50)));
   }
 
-  function flushQueue() {
+  var flushTimer = 0;
+  function scheduleFlush(delay) {
+    if (flushTimer) window.clearTimeout(flushTimer);
     var items = queueRead();
     if (!items.length) return;
-    var batch = items.slice(0, 20);
-    var batchIds = {};
-    batch.forEach(function (item) {
-      if (item && item.eventId) batchIds[item.eventId] = true;
+    var now = Date.now();
+    var nextAt = items.reduce(function (min, item) {
+      var value = Number(item.nextAttemptAt || 0);
+      return !min || value < min ? value : min;
+    }, 0);
+    var wait = typeof delay === "number" ? delay : Math.max(500, nextAt - now);
+    flushTimer = window.setTimeout(flushQueue, Math.min(wait, 10 * 60 * 1000));
+  }
+
+  function flushQueue() {
+    flushTimer = 0;
+    var items = queueRead();
+    if (!items.length || !navigator.onLine) {
+      if (items.length) scheduleFlush(30000);
+      return;
+    }
+    var now = Date.now();
+    var due = items.filter(function (item) { return Number(item.nextAttemptAt || 0) <= now; }).slice(0, 20);
+    if (!due.length) {
+      scheduleFlush();
+      return;
+    }
+    var payloads = due.map(function (item) { return item.payload; });
+    var dueIds = {};
+    due.forEach(function (item) {
+      if (item.payload && item.payload.eventId) dueIds[item.payload.eventId] = item;
     });
 
-    request({ events: batch })
+    request({ events: payloads })
       .then(function (data) {
         var accepted = {};
-        var permanentRejected = {};
         var rejected = Array.isArray(data.rejectedEvents) ? data.rejectedEvents : [];
-
         (Array.isArray(data.acceptedEventIds) ? data.acceptedEventIds : []).forEach(function (id) {
           accepted[id] = true;
         });
-
-        // Kompatibilitas dengan server tracker lama: respons sukses tanpa detail berarti seluruh batch diterima.
         if (!Object.keys(accepted).length && !rejected.length && data && data.ok === true) {
-          Object.keys(batchIds).forEach(function (id) { accepted[id] = true; });
+          Object.keys(dueIds).forEach(function (id) { accepted[id] = true; });
         }
-
+        var rejectionMap = {};
         rejected.forEach(function (entry) {
-          var id = entry && entry.eventId ? entry.eventId : "";
-          if (!id || entry.retryable !== false) return;
-          permanentRejected[id] = entry.code || "rejected";
+          if (entry && entry.eventId) rejectionMap[entry.eventId] = entry;
         });
-
-        batch.forEach(function (item) {
-          if (item && item.eventId && permanentRejected[item.eventId]) {
-            deadLetterAdd(item, permanentRejected[item.eventId]);
+        var updated = queueRead().filter(function (item) {
+          var id = item && item.payload ? item.payload.eventId : "";
+          if (!id || !dueIds[id]) return true;
+          if (accepted[id]) return false;
+          var rejection = rejectionMap[id];
+          if (rejection && rejection.retryable === false) {
+            deadLetterAdd(item.payload, rejection.code || "rejected");
+            return false;
           }
+          item.attempts = Number(item.attempts || 0) + 1;
+          item.nextAttemptAt = Date.now() + retryDelay(item.attempts, 0);
+          return true;
         });
-
-        var before = queueRead();
-        var remaining = before.filter(function (item) {
-          if (!item || !item.eventId) return true;
-          return !accepted[item.eventId] && !permanentRejected[item.eventId];
-        });
-        queueWrite(remaining);
-
-        if (remaining.length) {
-          var progressed = remaining.length < before.length;
-          window.setTimeout(flushQueue, progressed ? 800 : 30000);
-        }
+        queueWrite(updated);
+        scheduleFlush(updated.length ? 1000 : undefined);
       })
-      .catch(function () {
-        // Kesalahan jaringan/server: seluruh event tetap berada di antrean untuk dicoba lagi.
+      .catch(function (error) {
+        var status = Number(error && error.status ? error.status : 0);
+        var updated = queueRead().filter(function (item) {
+          var id = item && item.payload ? item.payload.eventId : "";
+          if (!id || !dueIds[id]) return true;
+          if (isPermanentStatus(status)) {
+            deadLetterAdd(item.payload, "HTTP " + status);
+            return false;
+          }
+          item.attempts = Number(item.attempts || 0) + 1;
+          item.nextAttemptAt = Date.now() + retryDelay(item.attempts, status);
+          return true;
+        });
+        queueWrite(updated);
+        scheduleFlush();
       });
   }
 
+  function loadRuntimeConfig() {
+    return request({}, configEndpoint, "GET").then(function (data) {
+      if (data && data.ok) {
+        metaMode = clean(data.metaMode || metaMode, 20) || "off";
+        metaPixelId = clean(data.metaPixelId || metaPixelId, 40);
+        metaPageView = data.metaSendPageView === true;
+        if (!cookieDomain && data.cookieDomain) cookieDomain = clean(data.cookieDomain, 120);
+      }
+      return data;
+    }).catch(function () { return {}; });
+  }
+
+  function validateInternalDevice() {
+    if (!currentInternalToken) {
+      currentInternalValid = false;
+      return Promise.resolve(false);
+    }
+    return request({
+      internalToken: currentInternalToken,
+      visitorId: currentVisitorId,
+    }, deviceStatusEndpoint).then(function (data) {
+      currentInternalValid = !!(data && data.internal);
+      if (!currentInternalValid) {
+        storageRemove("bwt_internal_token");
+        setCookie("bwt_internal_token", "", -1);
+        currentInternalToken = "";
+      }
+      return currentInternalValid;
+    }).catch(function () {
+      currentInternalValid = !!currentInternalToken;
+      return currentInternalValid;
+    });
+  }
+
   function metaTrack(eventType, payload) {
-    if (metaMode === "off" || !window.fbq) return;
+    if (currentInternalValid || metaMode === "off" || !window.fbq) return;
     if (eventType === "page_view") {
       if (!metaPageView || window.__BWT_META_PAGEVIEW_SENT) return;
       window.__BWT_META_PAGEVIEW_SENT = true;
@@ -416,15 +518,15 @@
       eventType: clean(eventType || "custom_event", 80).toLowerCase(),
       eventId: (extra && extra.eventId) || makeId("e"),
     });
-    request(payload).catch(function () {
-      queueAdd(payload);
+    request(payload).catch(function (error) {
+      queueAdd(payload, error);
     });
     metaTrack(payload.eventType, payload);
     return payload.eventId;
   }
 
   function initMetaPixel() {
-    if (metaMode === "off" || metaMode === "existing") return;
+    if (currentInternalValid || metaMode === "off" || metaMode === "existing") return;
     if (!metaPixelId || window.fbq) return;
     !(function (f, b, e, v, n, t, s) {
       if (f.fbq) return;
@@ -559,7 +661,7 @@
     var scrollTop = window.pageYOffset || doc.scrollTop || body.scrollTop || 0;
     var height = Math.max(body.scrollHeight, doc.scrollHeight, body.offsetHeight, doc.offsetHeight, body.clientHeight, doc.clientHeight);
     var viewport = window.innerHeight || doc.clientHeight || 1;
-    if (height <= viewport + 2) return 100;
+    if (height <= viewport + 2) return 0;
     return Math.min(100, Math.round((scrollTop / Math.max(1, height - viewport)) * 100));
   }
 
@@ -719,19 +821,33 @@
         return attr;
       },
       isInternal: function () {
-        return !!currentInternalToken;
+        return !!currentInternalValid;
       },
       flush: flushQueue,
     };
   }
 
-  initMetaPixel();
-  installTransactionFetchBridge();
-  exposeApi();
-  bindClicks();
-  bindForms();
-  bindScroll();
-  bindCheckoutDetails();
-  flushQueue();
-  send("page_view", { label: document.title || "Page view" });
+  function bootstrap() {
+    Promise.all([loadRuntimeConfig(), validateInternalDevice()]).then(function () {
+      initMetaPixel();
+      installTransactionFetchBridge();
+      exposeApi();
+      bindClicks();
+      bindForms();
+      bindScroll();
+      bindCheckoutDetails();
+      flushQueue();
+      send("page_view", { label: document.title || "Page view" });
+    });
+  }
+
+  window.addEventListener("online", function () { scheduleFlush(500); });
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "visible") scheduleFlush(500);
+  });
+  window.setInterval(function () {
+    if (queueRead().length) scheduleFlush(500);
+  }, 60000);
+
+  bootstrap();
 })();
